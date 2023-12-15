@@ -309,15 +309,6 @@ jobs:
         $(yt-dlp -g https://www.youtube.com/watch?v=OxQQsIvJTTU)
         EOL
 
-    - name: Get kr_YTN.m3u8
-      run: |
-        touch ./kr_YTN.m3u8
-        sudo cat >./kr_YTN.m3u8 <<EOL
-        #EXTM3U
-        #EXTINF:-1
-        $(yt-dlp -g https://www.youtube.com/watch?v=FJfwehhzIhw)
-        EOL
-
     - name: Get kr_Arirang.m3u8
       run: |
         touch ./kr_Arirang.m3u8
@@ -352,15 +343,6 @@ jobs:
         #EXTM3U
         #EXTINF:-1
         $(yt-dlp -g https://www.youtube.com/watch?v=ZuPuzTjVrEg)
-        EOL
-
-    - name: Get us_FoxNewsNow.m3u8
-      run: |
-        touch ./us_FoxNewsNow.m3u8
-        sudo cat >./us_FoxNewsNow.m3u8 <<EOL
-        #EXTM3U
-        #EXTINF:-1
-        $(yt-dlp -g https://www.youtube.com/watch?v=3_-jZqsQqdk)
         EOL
 
     - name: Get us_CNBC.m3u8
