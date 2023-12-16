@@ -342,7 +342,7 @@ jobs:
         sudo cat >./my_Bernama.m3u8 <<EOL
         #EXTM3U
         #EXTINF:-1
-        $(yt-dlp -g https://www.youtube.com/watch?v=ZuPuzTjVrEg)
+        $(yt-dlp -g https://www.youtube.com/watch?v=MWC3t08SYxY)
         EOL
 
     - name: Get us_CNBC.m3u8
