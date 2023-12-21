@@ -17,8 +17,7 @@ jobs:
         touch ./cn_CCTV4.m3u8
         sudo cat >./cn_CCTV4.m3u8 <<EOL
         #EXTM3U
-        #EXT-X-INDEPENDENT-SEGMENTS
-        #EXT-X-STREAM-INF:BANDWIDTH=5420722,CODECS="mp4a.40.2,avc1.640028",RESOLUTION=1920x1080,FRAME-RATE=30,VIDEO-RANGE=SDR,CLOSED-CAPTIONS=NONE
+        #EXTINF:-1
         $(yt-dlp -g https://www.youtube.com/watch?v=9sE12tg3CmA)
         EOL
 
@@ -27,8 +26,7 @@ jobs:
         touch ./cn_CGTN.m3u8
         sudo cat >./cn_CGTN.m3u8 <<EOL
         #EXTM3U
-        #EXT-X-INDEPENDENT-SEGMENTS
-        #EXT-X-STREAM-INF:BANDWIDTH=5420722,CODECS="mp4a.40.2,avc1.640028",RESOLUTION=1920x1080,FRAME-RATE=30,VIDEO-RANGE=SDR,CLOSED-CAPTIONS=NONE
+        #EXTINF:-1
         $(yt-dlp -g https://www.youtube.com/watch?v=Zv60F39Is_c)
         EOL
 
@@ -37,8 +35,7 @@ jobs:
         touch ./cn_CGTNFrancais.m3u8
         sudo cat >./cn_CGTNFrancais.m3u8 <<EOL
         #EXTM3U
-        #EXT-X-INDEPENDENT-SEGMENTS
-        #EXT-X-STREAM-INF:BANDWIDTH=5420722,CODECS="mp4a.40.2,avc1.640028",RESOLUTION=1920x1080,FRAME-RATE=30,VIDEO-RANGE=SDR,CLOSED-CAPTIONS=NONE
+        #EXTINF:-1
         $(yt-dlp -g https://www.youtube.com/watch?v=DxhwEQjegYw)
         EOL
 
@@ -47,8 +44,7 @@ jobs:
         touch ./cn_CGTNArabic.m3u8
         sudo cat >./cn_CGTNArabic.m3u8 <<EOL
         #EXTM3U
-        #EXT-X-INDEPENDENT-SEGMENTS
-        #EXT-X-STREAM-INF:BANDWIDTH=5420722,CODECS="mp4a.40.2,avc1.640028",RESOLUTION=1920x1080,FRAME-RATE=30,VIDEO-RANGE=SDR,CLOSED-CAPTIONS=NONE
+        #EXTINF:-1
         $(yt-dlp -g https://www.youtube.com/watch?v=JHOcCQhkMVk)
         EOL
 
@@ -57,8 +53,7 @@ jobs:
         touch ./cn_ChinesePOPMusic.m3u8
         sudo cat >./cn_ChinesePOPMusic.m3u8 <<EOL
         #EXTM3U
-        #EXT-X-INDEPENDENT-SEGMENTS
-        #EXT-X-STREAM-INF:BANDWIDTH=5420722,CODECS="mp4a.40.2,avc1.640028",RESOLUTION=1920x1080,FRAME-RATE=30,VIDEO-RANGE=SDR,CLOSED-CAPTIONS=NONE
+        #EXTINF:-1
         $(yt-dlp -g https://www.youtube.com/watch?v=IfNMuFqKBWs)
         EOL
 
@@ -67,8 +62,7 @@ jobs:
         touch ./hk_FengHuangZiXun.m3u8
         sudo cat >./hk_FengHuangZiXun.m3u8 <<EOL
         #EXTM3U
-        #EXT-X-INDEPENDENT-SEGMENTS
-        #EXT-X-STREAM-INF:BANDWIDTH=5420722,CODECS="mp4a.40.2,avc1.640028",RESOLUTION=1920x1080,FRAME-RATE=30,VIDEO-RANGE=SDR,CLOSED-CAPTIONS=NONE
+        #EXTINF:-1
         $(yt-dlp -g https://www.youtube.com/watch?v=Zm4i_rvAcxc)
         EOL
 
@@ -77,8 +71,7 @@ jobs:
         touch ./ww_ZhongTianXinWen.m3u8
         sudo cat >./ww_ZhongTianXinWen.m3u8 <<EOL
         #EXTM3U
-        #EXT-X-INDEPENDENT-SEGMENTS
-        #EXT-X-STREAM-INF:BANDWIDTH=5420722,CODECS="mp4a.40.2,avc1.640028",RESOLUTION=1920x1080,FRAME-RATE=30,VIDEO-RANGE=SDR,CLOSED-CAPTIONS=NONE
+        #EXTINF:-1
         $(yt-dlp -g https://www.youtube.com/watch?v=oIgbl7t0S_w)
         EOL
 
@@ -87,8 +80,7 @@ jobs:
         touch ./ww_ZhongTianXinWen2.m3u8
         sudo cat >./ww_ZhongTianXinWen2.m3u8 <<EOL
         #EXTM3U
-        #EXT-X-INDEPENDENT-SEGMENTS
-        #EXT-X-STREAM-INF:BANDWIDTH=5420722,CODECS="mp4a.40.2,avc1.640028",RESOLUTION=1920x1080,FRAME-RATE=30,VIDEO-RANGE=SDR,CLOSED-CAPTIONS=NONE
+        #EXTINF:-1
         $(yt-dlp -g https://www.youtube.com/watch?v=WPfPjbOLNfE)
         EOL
 
@@ -97,8 +89,7 @@ jobs:
         touch ./ww_TVBSXinWen.m3u8
         sudo cat >./ww_TVBSXinWen.m3u8 <<EOL
         #EXTM3U
-        #EXT-X-INDEPENDENT-SEGMENTS
-        #EXT-X-STREAM-INF:BANDWIDTH=5420722,CODECS="mp4a.40.2,avc1.640028",RESOLUTION=1920x1080,FRAME-RATE=30,VIDEO-RANGE=SDR,CLOSED-CAPTIONS=NONE
+        #EXTINF:-1
         $(yt-dlp -g https://www.youtube.com/watch?v=2mCSYvcfhtc)
         EOL
 
@@ -107,8 +98,7 @@ jobs:
         touch ./ww_TVBSNews.m3u8
         sudo cat >./ww_TVBSNews.m3u8 <<EOL
         #EXTM3U
-        #EXT-X-INDEPENDENT-SEGMENTS
-        #EXT-X-STREAM-INF:BANDWIDTH=5420722,CODECS="mp4a.40.2,avc1.640028",RESOLUTION=1920x1080,FRAME-RATE=30,VIDEO-RANGE=SDR,CLOSED-CAPTIONS=NONE
+        #EXTINF:-1
         $(yt-dlp -g https://www.youtube.com/watch?v=m_dhMSvUCIc)
         EOL
 
@@ -117,8 +107,7 @@ jobs:
         touch ./ww_TVBSXuanXinWen.m3u8
         sudo cat >./ww_TVBSXuanXinWen.m3u8 <<EOL
         #EXTM3U
-        #EXT-X-INDEPENDENT-SEGMENTS
-        #EXT-X-STREAM-INF:BANDWIDTH=5420722,CODECS="mp4a.40.2,avc1.640028",RESOLUTION=1920x1080,FRAME-RATE=30,VIDEO-RANGE=SDR,CLOSED-CAPTIONS=NONE
+        #EXTINF:-1
         $(yt-dlp -g https://www.youtube.com/watch?v=YvdcZ_jpLXE)
         EOL
 
@@ -127,8 +116,7 @@ jobs:
         touch ./ww_TaiShiXinWen.m3u8
         sudo cat >./ww_TaiShiXinWen.m3u8 <<EOL
         #EXTM3U
-        #EXT-X-INDEPENDENT-SEGMENTS
-        #EXT-X-STREAM-INF:BANDWIDTH=5420722,CODECS="mp4a.40.2,avc1.640028",RESOLUTION=1920x1080,FRAME-RATE=30,VIDEO-RANGE=SDR,CLOSED-CAPTIONS=NONE
+        #EXTINF:-1
         $(yt-dlp -g https://www.youtube.com/watch?v=xL0ch83RAK8)
         EOL
 
@@ -137,8 +125,7 @@ jobs:
         touch ./ww_ZhongShiXinWen.m3u8
         sudo cat >./ww_ZhongShiXinWen.m3u8 <<EOL
         #EXTM3U
-        #EXT-X-INDEPENDENT-SEGMENTS
-        #EXT-X-STREAM-INF:BANDWIDTH=5420722,CODECS="mp4a.40.2,avc1.640028",RESOLUTION=1920x1080,FRAME-RATE=30,VIDEO-RANGE=SDR,CLOSED-CAPTIONS=NONE
+        #EXTINF:-1
         $(yt-dlp -g https://www.youtube.com/watch?v=TCnaIE_SAtM)
         EOL
 
@@ -147,8 +134,7 @@ jobs:
         touch ./ww_DongSenXinWen.m3u8
         sudo cat >./ww_DongSenXinWen.m3u8 <<EOL
         #EXTM3U
-        #EXT-X-INDEPENDENT-SEGMENTS
-        #EXT-X-STREAM-INF:BANDWIDTH=5420722,CODECS="mp4a.40.2,avc1.640028",RESOLUTION=1920x1080,FRAME-RATE=30,VIDEO-RANGE=SDR,CLOSED-CAPTIONS=NONE
+        #EXTINF:-1
         $(yt-dlp -g https://www.youtube.com/watch?v=S5WOGu2HSes)
         EOL
 
@@ -157,8 +143,7 @@ jobs:
         touch ./ww_DongSenXinWen2.m3u8
         sudo cat >./ww_DongSenXinWen2.m3u8 <<EOL
         #EXTM3U
-        #EXT-X-INDEPENDENT-SEGMENTS
-        #EXT-X-STREAM-INF:BANDWIDTH=5420722,CODECS="mp4a.40.2,avc1.640028",RESOLUTION=1920x1080,FRAME-RATE=30,VIDEO-RANGE=SDR,CLOSED-CAPTIONS=NONE
+        #EXTINF:-1
         $(yt-dlp -g https://www.youtube.com/watch?v=E0zhe2gkXBs)
         EOL
 
@@ -167,8 +152,7 @@ jobs:
         touch ./ww_DongSenShiJieRiBao.m3u8
         sudo cat >./ww_DongSenShiJieRiBao.m3u8 <<EOL
         #EXTM3U
-        #EXT-X-INDEPENDENT-SEGMENTS
-        #EXT-X-STREAM-INF:BANDWIDTH=5420722,CODECS="mp4a.40.2,avc1.640028",RESOLUTION=1920x1080,FRAME-RATE=30,VIDEO-RANGE=SDR,CLOSED-CAPTIONS=NONE
+        #EXTINF:-1
         $(yt-dlp -g https://www.youtube.com/watch?v=6gXbFIaRJt0)
         EOL
 
@@ -177,8 +161,7 @@ jobs:
         touch ./ww_DongSenCaiJingXinWen.m3u8
         sudo cat >./ww_DongSenCaiJingXinWen.m3u8 <<EOL
         #EXTM3U
-        #EXT-X-INDEPENDENT-SEGMENTS
-        #EXT-X-STREAM-INF:BANDWIDTH=5420722,CODECS="mp4a.40.2,avc1.640028",RESOLUTION=1920x1080,FRAME-RATE=30,VIDEO-RANGE=SDR,CLOSED-CAPTIONS=NONE
+        #EXTINF:-1
         $(yt-dlp -g https://www.youtube.com/watch?v=LbS-xQ67fos)
         EOL
 
@@ -187,8 +170,7 @@ jobs:
         touch ./ww_DongSenCaiJingXinWen2.m3u8
         sudo cat >./ww_DongSenCaiJingXinWen2.m3u8 <<EOL
         #EXTM3U
-        #EXT-X-INDEPENDENT-SEGMENTS
-        #EXT-X-STREAM-INF:BANDWIDTH=5420722,CODECS="mp4a.40.2,avc1.640028",RESOLUTION=1920x1080,FRAME-RATE=30,VIDEO-RANGE=SDR,CLOSED-CAPTIONS=NONE
+        #EXTINF:-1
         $(yt-dlp -g https://www.youtube.com/watch?v=WHEPzbFA3hw)
         EOL
 
@@ -197,8 +179,7 @@ jobs:
         touch ./ww_MinShiXinWen.m3u8
         sudo cat >./ww_MinShiXinWen.m3u8 <<EOL
         #EXTM3U
-        #EXT-X-INDEPENDENT-SEGMENTS
-        #EXT-X-STREAM-INF:BANDWIDTH=5420722,CODECS="mp4a.40.2,avc1.640028",RESOLUTION=1920x1080,FRAME-RATE=30,VIDEO-RANGE=SDR,CLOSED-CAPTIONS=NONE
+        #EXTINF:-1
         $(yt-dlp -g https://www.youtube.com/watch?v=ylYJSBUgaMA)
         EOL
 
@@ -207,8 +188,7 @@ jobs:
         touch ./ww_SanLiiNEWS.m3u8
         sudo cat >./ww_SanLiiNEWS.m3u8 <<EOL
         #EXTM3U
-        #EXT-X-INDEPENDENT-SEGMENTS
-        #EXT-X-STREAM-INF:BANDWIDTH=5420722,CODECS="mp4a.40.2,avc1.640028",RESOLUTION=1920x1080,FRAME-RATE=30,VIDEO-RANGE=SDR,CLOSED-CAPTIONS=NONE
+        #EXTINF:-1
         $(yt-dlp -g https://www.youtube.com/watch?v=CKjSm5ZeehE)
         EOL
 
@@ -217,8 +197,7 @@ jobs:
         touch ./ww_SanLiiNEWS+.m3u8
         sudo cat >./ww_SanLiiNEWS+.m3u8 <<EOL
         #EXTM3U
-        #EXT-X-INDEPENDENT-SEGMENTS
-        #EXT-X-STREAM-INF:BANDWIDTH=5420722,CODECS="mp4a.40.2,avc1.640028",RESOLUTION=1920x1080,FRAME-RATE=30,VIDEO-RANGE=SDR,CLOSED-CAPTIONS=NONE
+        #EXTINF:-1
         $(yt-dlp -g https://www.youtube.com/watch?v=oZdzzvxTfUY)
         EOL
 
@@ -227,8 +206,7 @@ jobs:
         touch ./ww_SanLiLive.m3u8
         sudo cat >./ww_SanLiLive.m3u8 <<EOL
         #EXTM3U
-        #EXT-X-INDEPENDENT-SEGMENTS
-        #EXT-X-STREAM-INF:BANDWIDTH=5420722,CODECS="mp4a.40.2,avc1.640028",RESOLUTION=1920x1080,FRAME-RATE=30,VIDEO-RANGE=SDR,CLOSED-CAPTIONS=NONE
+        #EXTINF:-1
         $(yt-dlp -g https://www.youtube.com/watch?v=FoBfXvlOR6I)
         EOL
 
@@ -237,8 +215,7 @@ jobs:
         touch ./ww_HuanYuXinWenWW.m3u8
         sudo cat >./ww_HuanYuXinWenWW.m3u8 <<EOL
         #EXTM3U
-        #EXT-X-INDEPENDENT-SEGMENTS
-        #EXT-X-STREAM-INF:BANDWIDTH=5420722,CODECS="mp4a.40.2,avc1.640028",RESOLUTION=1920x1080,FRAME-RATE=30,VIDEO-RANGE=SDR,CLOSED-CAPTIONS=NONE
+        #EXTINF:-1
         $(yt-dlp -g https://www.youtube.com/watch?v=w87VGpgd90U)
         EOL
 
@@ -247,8 +224,7 @@ jobs:
         touch ./ww_HuanYuXinWenQuanQiu.m3u8
         sudo cat >./ww_HuanYuXinWenQuanQiu.m3u8 <<EOL
         #EXTM3U
-        #EXT-X-INDEPENDENT-SEGMENTS
-        #EXT-X-STREAM-INF:BANDWIDTH=5420722,CODECS="mp4a.40.2,avc1.640028",RESOLUTION=1920x1080,FRAME-RATE=30,VIDEO-RANGE=SDR,CLOSED-CAPTIONS=NONE
+        #EXTINF:-1
         $(yt-dlp -g https://www.youtube.com/watch?v=vOue3tgccd0)
         EOL
 
@@ -257,8 +233,7 @@ jobs:
         touch ./ww_HuanYuXinWen24.m3u8
         sudo cat >./ww_HuanYuXinWen24.m3u8 <<EOL
         #EXTM3U
-        #EXT-X-INDEPENDENT-SEGMENTS
-        #EXT-X-STREAM-INF:BANDWIDTH=5420722,CODECS="mp4a.40.2,avc1.640028",RESOLUTION=1920x1080,FRAME-RATE=30,VIDEO-RANGE=SDR,CLOSED-CAPTIONS=NONE
+        #EXTINF:-1
         $(yt-dlp -g https://www.youtube.com/watch?v=6IquAgfvYmc)
         EOL
 
@@ -267,8 +242,7 @@ jobs:
         touch ./ww_HuanYuXinWenCaiJing.m3u8
         sudo cat >./ww_HuanYuXinWenCaiJing.m3u8 <<EOL
         #EXTM3U
-        #EXT-X-INDEPENDENT-SEGMENTS
-        #EXT-X-STREAM-INF:BANDWIDTH=5420722,CODECS="mp4a.40.2,avc1.640028",RESOLUTION=1920x1080,FRAME-RATE=30,VIDEO-RANGE=SDR,CLOSED-CAPTIONS=NONE
+        #EXTINF:-1
         $(yt-dlp -g https://www.youtube.com/watch?v=25SE1bbTv9k)
         EOL
 
@@ -277,8 +251,7 @@ jobs:
         touch ./ww_JingXinWen.m3u8
         sudo cat >./ww_JingXinWen.m3u8 <<EOL
         #EXTM3U
-        #EXT-X-INDEPENDENT-SEGMENTS
-        #EXT-X-STREAM-INF:BANDWIDTH=5420722,CODECS="mp4a.40.2,avc1.640028",RESOLUTION=1920x1080,FRAME-RATE=30,VIDEO-RANGE=SDR,CLOSED-CAPTIONS=NONE
+        #EXTINF:-1
         $(yt-dlp -g https://www.youtube.com/watch?v=5n0y6b0Q25o)
         EOL
 
@@ -287,8 +260,7 @@ jobs:
         touch ./ww_ZhangHuaShengHuo.m3u8
         sudo cat >./ww_ZhangHuaShengHuo.m3u8 <<EOL
         #EXTM3U
-        #EXT-X-INDEPENDENT-SEGMENTS
-        #EXT-X-STREAM-INF:BANDWIDTH=5420722,CODECS="mp4a.40.2,avc1.640028",RESOLUTION=1920x1080,FRAME-RATE=30,VIDEO-RANGE=SDR,CLOSED-CAPTIONS=NONE
+        #EXTINF:-1
         $(yt-dlp -g https://www.youtube.com/watch?v=V2RdYQsVXzA)
         EOL
 
@@ -297,8 +269,7 @@ jobs:
         touch ./ww_YOYOTV.m3u8
         sudo cat >./ww_YOYOTV.m3u8 <<EOL
         #EXTM3U
-        #EXT-X-INDEPENDENT-SEGMENTS
-        #EXT-X-STREAM-INF:BANDWIDTH=5420722,CODECS="mp4a.40.2,avc1.640028",RESOLUTION=1920x1080,FRAME-RATE=30,VIDEO-RANGE=SDR,CLOSED-CAPTIONS=NONE
+        #EXTINF:-1
         $(yt-dlp -g https://www.youtube.com/watch?v=_gksNoedJ7o)
         EOL
 
@@ -307,8 +278,7 @@ jobs:
         touch ./ww_YunTongCaiJing.m3u8
         sudo cat >./ww_YunTongCaiJing.m3u8 <<EOL
         #EXTM3U
-        #EXT-X-INDEPENDENT-SEGMENTS
-        #EXT-X-STREAM-INF:BANDWIDTH=5420722,CODECS="mp4a.40.2,avc1.640028",RESOLUTION=1920x1080,FRAME-RATE=30,VIDEO-RANGE=SDR,CLOSED-CAPTIONS=NONE
+        #EXTINF:-1
         $(yt-dlp -g https://www.youtube.com/watch?v=KrORwDaq0Eo)
         EOL
 
@@ -317,8 +287,7 @@ jobs:
         touch ./ww_DaAi1.m3u8
         sudo cat >./ww_DaAi1.m3u8 <<EOL
         #EXTM3U
-        #EXT-X-INDEPENDENT-SEGMENTS
-        #EXT-X-STREAM-INF:BANDWIDTH=5420722,CODECS="mp4a.40.2,avc1.640028",RESOLUTION=1920x1080,FRAME-RATE=30,VIDEO-RANGE=SDR,CLOSED-CAPTIONS=NONE
+        #EXTINF:-1
         $(yt-dlp -g https://www.youtube.com/watch?v=MIqUplvSRWA)
         EOL
 
@@ -327,8 +296,7 @@ jobs:
         touch ./ww_DaAi2.m3u8
         sudo cat >./ww_DaAi2.m3u8 <<EOL
         #EXTM3U
-        #EXT-X-INDEPENDENT-SEGMENTS
-        #EXT-X-STREAM-INF:BANDWIDTH=5420722,CODECS="mp4a.40.2,avc1.640028",RESOLUTION=1920x1080,FRAME-RATE=30,VIDEO-RANGE=SDR,CLOSED-CAPTIONS=NONE
+        #EXTINF:-1
         $(yt-dlp -g https://www.youtube.com/watch?v=DTNkEm6jaqQ)
         EOL
 
@@ -337,8 +305,7 @@ jobs:
         touch ./ww_TaiwanPlus.m3u8
         sudo cat >./ww_TaiwanPlus.m3u8 <<EOL
         #EXTM3U
-        #EXT-X-INDEPENDENT-SEGMENTS
-        #EXT-X-STREAM-INF:BANDWIDTH=5420722,CODECS="mp4a.40.2,avc1.640028",RESOLUTION=1920x1080,FRAME-RATE=30,VIDEO-RANGE=SDR,CLOSED-CAPTIONS=NONE
+        #EXTINF:-1
         $(yt-dlp -g https://www.youtube.com/watch?v=dZp87qnWelE)
         EOL
 
@@ -347,8 +314,7 @@ jobs:
         touch ./ww_NTDAPTV.m3u8
         sudo cat >./ww_NTDAPTV.m3u8 <<EOL
         #EXTM3U
-        #EXT-X-INDEPENDENT-SEGMENTS
-        #EXT-X-STREAM-INF:BANDWIDTH=5420722,CODECS="mp4a.40.2,avc1.640028",RESOLUTION=1920x1080,FRAME-RATE=30,VIDEO-RANGE=SDR,CLOSED-CAPTIONS=NONE
+        #EXTINF:-1
         $(yt-dlp -g https://www.youtube.com/watch?v=WIhgU_mc05A)
         EOL
 
@@ -357,8 +323,7 @@ jobs:
         touch ./jp_ANNnews.m3u8
         sudo cat >./jp_ANNnews.m3u8 <<EOL
         #EXTM3U
-        #EXT-X-INDEPENDENT-SEGMENTS
-        #EXT-X-STREAM-INF:BANDWIDTH=5420722,CODECS="mp4a.40.2,avc1.640028",RESOLUTION=1920x1080,FRAME-RATE=30,VIDEO-RANGE=SDR,CLOSED-CAPTIONS=NONE
+        #EXTINF:-1
         $(yt-dlp -g https://www.youtube.com/watch?v=coYw-eVU0Ks)
         EOL
 
@@ -367,8 +332,7 @@ jobs:
         touch ./jp_TBSNewsDIG.m3u8
         sudo cat >./jp_TBSNewsDIG.m3u8 <<EOL
         #EXTM3U
-        #EXT-X-INDEPENDENT-SEGMENTS
-        #EXT-X-STREAM-INF:BANDWIDTH=5420722,CODECS="mp4a.40.2,avc1.640028",RESOLUTION=1920x1080,FRAME-RATE=30,VIDEO-RANGE=SDR,CLOSED-CAPTIONS=NONE
+        #EXTINF:-1
         $(yt-dlp -g https://www.youtube.com/watch?v=ohI356mwBp8)
         EOL
 
@@ -377,8 +341,7 @@ jobs:
         touch ./jp_HOMENews.m3u8
         sudo cat >./jp_HOMENews.m3u8 <<EOL
         #EXTM3U
-        #EXT-X-INDEPENDENT-SEGMENTS
-        #EXT-X-STREAM-INF:BANDWIDTH=5420722,CODECS="mp4a.40.2,avc1.640028",RESOLUTION=1920x1080,FRAME-RATE=30,VIDEO-RANGE=SDR,CLOSED-CAPTIONS=NONE
+        #EXTINF:-1
         $(yt-dlp -g https://www.youtube.com/watch?v=e2pgLUmaxGs)
         EOL
 
@@ -387,8 +350,7 @@ jobs:
         touch ./jp_HTBNews.m3u8
         sudo cat >./jp_HTBNews.m3u8 <<EOL
         #EXTM3U
-        #EXT-X-INDEPENDENT-SEGMENTS
-        #EXT-X-STREAM-INF:BANDWIDTH=5420722,CODECS="mp4a.40.2,avc1.640028",RESOLUTION=1920x1080,FRAME-RATE=30,VIDEO-RANGE=SDR,CLOSED-CAPTIONS=NONE
+        #EXTINF:-1
         $(yt-dlp -g https://www.youtube.com/watch?v=d8CrKBU99Hg)
         EOL
 
@@ -397,8 +359,7 @@ jobs:
         touch ./jp_STVNews.m3u8
         sudo cat >./jp_STVNews.m3u8 <<EOL
         #EXTM3U
-        #EXT-X-INDEPENDENT-SEGMENTS
-        #EXT-X-STREAM-INF:BANDWIDTH=5420722,CODECS="mp4a.40.2,avc1.640028",RESOLUTION=1920x1080,FRAME-RATE=30,VIDEO-RANGE=SDR,CLOSED-CAPTIONS=NONE
+        #EXTINF:-1
         $(yt-dlp -g https://www.youtube.com/watch?v=UNbMsJnWdDY)
         EOL
 
@@ -407,8 +368,7 @@ jobs:
         touch ./jp_KTSKagoshimaNews.m3u8
         sudo cat >./jp_KTSKagoshimaNews.m3u8 <<EOL
         #EXTM3U
-        #EXT-X-INDEPENDENT-SEGMENTS
-        #EXT-X-STREAM-INF:BANDWIDTH=5420722,CODECS="mp4a.40.2,avc1.640028",RESOLUTION=1920x1080,FRAME-RATE=30,VIDEO-RANGE=SDR,CLOSED-CAPTIONS=NONE
+        #EXTINF:-1
         $(yt-dlp -g https://www.youtube.com/watch?v=PCccV7cCW8M)
         EOL
 
