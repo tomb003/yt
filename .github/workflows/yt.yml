@@ -17,7 +17,7 @@ jobs:
         touch ./cn_CCTV4.m3u8
         sudo cat >./cn_CCTV4.m3u8 <<EOL
         #EXTM3U
-        #EXTINF:-1
+        #EXTINF:-1,
         $(yt-dlp -g https://www.youtube.com/watch?v=9sE12tg3CmA)
         EOL
 
@@ -26,8 +26,17 @@ jobs:
         touch ./cn_CGTN.m3u8
         sudo cat >./cn_CGTN.m3u8 <<EOL
         #EXTM3U
-        #EXTINF:-1
+        #EXTINF:-1,
         $(yt-dlp -g https://www.youtube.com/watch?v=Zv60F39Is_c)
+        EOL
+
+    - name: Get cn_CGTNFrancais.m3u8
+      run: |
+        touch ./cn_CGTNFrancais.m3u8
+        sudo cat >./cn_CGTNFrancais.m3u8 <<EOL
+        #EXTM3U
+        #EXTINF:-1,
+        $(yt-dlp -g https://www.youtube.com/watch?v=DxhwEQjegYw)
         EOL
 
     - name: Get cn_CGTNArabic.m3u8
@@ -35,7 +44,7 @@ jobs:
         touch ./cn_CGTNArabic.m3u8
         sudo cat >./cn_CGTNArabic.m3u8 <<EOL
         #EXTM3U
-        #EXTINF:-1
+        #EXTINF:-1,
         $(yt-dlp -g https://www.youtube.com/watch?v=JHOcCQhkMVk)
         EOL
 
@@ -44,7 +53,7 @@ jobs:
         touch ./cn_ChinesePOPMusic.m3u8
         sudo cat >./cn_ChinesePOPMusic.m3u8 <<EOL
         #EXTM3U
-        #EXTINF:-1
+        #EXTINF:-1,
         $(yt-dlp -g https://www.youtube.com/watch?v=IfNMuFqKBWs)
         EOL
 
@@ -53,7 +62,7 @@ jobs:
         touch ./hk_FengHuangZiXun.m3u8
         sudo cat >./hk_FengHuangZiXun.m3u8 <<EOL
         #EXTM3U
-        #EXTINF:-1
+        #EXTINF:-1,
         $(yt-dlp -g https://www.youtube.com/watch?v=Zm4i_rvAcxc)
         EOL
 
@@ -62,7 +71,7 @@ jobs:
         touch ./ww_ZhongTianXinWen.m3u8
         sudo cat >./ww_ZhongTianXinWen.m3u8 <<EOL
         #EXTM3U
-        #EXTINF:-1
+        #EXTINF:-1,
         $(yt-dlp -g https://www.youtube.com/watch?v=oIgbl7t0S_w)
         EOL
 
@@ -71,7 +80,7 @@ jobs:
         touch ./ww_ZhongTianXinWen2.m3u8
         sudo cat >./ww_ZhongTianXinWen2.m3u8 <<EOL
         #EXTM3U
-        #EXTINF:-1
+        #EXTINF:-1,
         $(yt-dlp -g https://www.youtube.com/watch?v=WPfPjbOLNfE)
         EOL
 
@@ -80,8 +89,35 @@ jobs:
         touch ./ww_TVBSXinWen.m3u8
         sudo cat >./ww_TVBSXinWen.m3u8 <<EOL
         #EXTM3U
-        #EXTINF:-1
+        #EXTINF:-1,
         $(yt-dlp -g https://www.youtube.com/watch?v=2mCSYvcfhtc)
+        EOL
+
+    - name: Get ww_TVBSNews.m3u8
+      run: |
+        touch ./ww_TVBSNews.m3u8
+        sudo cat >./ww_TVBSNews.m3u8 <<EOL
+        #EXTM3U
+        #EXTINF:-1,
+        $(yt-dlp -g https://www.youtube.com/watch?v=m_dhMSvUCIc)
+        EOL
+
+    - name: Get ww_TVBSXuanXinWen.m3u8
+      run: |
+        touch ./ww_TVBSXuanXinWen.m3u8
+        sudo cat >./ww_TVBSXuanXinWen.m3u8 <<EOL
+        #EXTM3U
+        #EXTINF:-1,
+        $(yt-dlp -g https://www.youtube.com/watch?v=YvdcZ_jpLXE)
+        EOL
+
+    - name: Get ww_HuaShiXinWenZiXun.m3u8
+      run: |
+        touch ./ww_HuaShiXinWenZiXun.m3u8
+        sudo cat >./ww_HuaShiXinWenZiXun.m3u8 <<EOL
+        #EXTM3U
+        #EXTINF:-1,
+        $(yt-dlp -g https://www.youtube.com/watch?v=wM0g8EoUZ_E)
         EOL
 
     - name: Get ww_TaiShiXinWen.m3u8
@@ -89,7 +125,7 @@ jobs:
         touch ./ww_TaiShiXinWen.m3u8
         sudo cat >./ww_TaiShiXinWen.m3u8 <<EOL
         #EXTM3U
-        #EXTINF:-1
+        #EXTINF:-1,
         $(yt-dlp -g https://www.youtube.com/watch?v=xL0ch83RAK8)
         EOL
 
@@ -98,17 +134,35 @@ jobs:
         touch ./ww_ZhongShiXinWen.m3u8
         sudo cat >./ww_ZhongShiXinWen.m3u8 <<EOL
         #EXTM3U
-        #EXTINF:-1
+        #EXTINF:-1,
         $(yt-dlp -g https://www.youtube.com/watch?v=TCnaIE_SAtM)
         EOL
 
     - name: Get ww_DongSenXinWen.m3u8
       run: |
         touch ./ww_DongSenXinWen.m3u8
-        sudo cat >./ww_DongSenXinWen.m3u8 <<EOL
+        sudo cat >ww_DongSenXinWen <<EOL
         #EXTM3U
-        #EXTINF:-1
+        #EXTINF:-1,
         $(yt-dlp -g https://www.youtube.com/watch?v=S5WOGu2HSes)
+        EOL
+
+    - name: Get ww_DongSenXinWen2.m3u8
+      run: |
+        touch ./ww_DongSenXinWen2.m3u8
+        sudo cat >./ww_DongSenXinWen2.m3u8 <<EOL
+        #EXTM3U
+        #EXTINF:-1,
+        $(yt-dlp -g https://www.youtube.com/watch?v=E0zhe2gkXBs)
+        EOL
+
+    - name: Get ww_DongSenShiJieRiBao.m3u8
+      run: |
+        touch ./ww_DongSenShiJieRiBao.m3u8
+        sudo cat >./ww_DongSenShiJieRiBao.m3u8 <<EOL
+        #EXTM3U
+        #EXTINF:-1,
+        $(yt-dlp -g https://www.youtube.com/watch?v=6gXbFIaRJt0)
         EOL
 
     - name: Get ww_DongSenCaiJingXinWen.m3u8
@@ -116,7 +170,16 @@ jobs:
         touch ./ww_DongSenCaiJingXinWen.m3u8
         sudo cat >./ww_DongSenCaiJingXinWen.m3u8 <<EOL
         #EXTM3U
-        #EXTINF:-1
+        #EXTINF:-1,
+        $(yt-dlp -g https://www.youtube.com/watch?v=LbS-xQ67fos)
+        EOL
+
+    - name: Get ww_DongSenCaiJingXinWen2.m3u8
+      run: |
+        touch ./ww_DongSenCaiJingXinWen2.m3u8
+        sudo cat >./ww_DongSenCaiJingXinWen2.m3u8 <<EOL
+        #EXTM3U
+        #EXTINF:-1,
         $(yt-dlp -g https://www.youtube.com/watch?v=WHEPzbFA3hw)
         EOL
 
@@ -125,7 +188,7 @@ jobs:
         touch ./ww_MinShiXinWen.m3u8
         sudo cat >./ww_MinShiXinWen.m3u8 <<EOL
         #EXTM3U
-        #EXTINF:-1
+        #EXTINF:-1,
         $(yt-dlp -g https://www.youtube.com/watch?v=ylYJSBUgaMA)
         EOL
 
@@ -134,8 +197,17 @@ jobs:
         touch ./ww_SanLiiNEWS.m3u8
         sudo cat >./ww_SanLiiNEWS.m3u8 <<EOL
         #EXTM3U
-        #EXTINF:-1
+        #EXTINF:-1,
         $(yt-dlp -g https://www.youtube.com/watch?v=CKjSm5ZeehE)
+        EOL
+
+    - name: Get ww_SanLiiNEWS+.m3u8
+      run: |
+        touch ./ww_SanLiiNEWS+.m3u8
+        sudo cat >./ww_SanLiiNEWS+.m3u8 <<EOL
+        #EXTM3U
+        #EXTINF:-1,
+        $(yt-dlp -g https://www.youtube.com/watch?v=oZdzzvxTfUY)
         EOL
 
     - name: Get ww_SanLiLive.m3u8
@@ -143,7 +215,7 @@ jobs:
         touch ./ww_SanLiLive.m3u8
         sudo cat >./ww_SanLiLive.m3u8 <<EOL
         #EXTM3U
-        #EXTINF:-1
+        #EXTINF:-1,
         $(yt-dlp -g https://www.youtube.com/watch?v=FoBfXvlOR6I)
         EOL
 
@@ -152,7 +224,7 @@ jobs:
         touch ./ww_HuanYuXinWenWW.m3u8
         sudo cat >./ww_HuanYuXinWenWW.m3u8 <<EOL
         #EXTM3U
-        #EXTINF:-1
+        #EXTINF:-1,
         $(yt-dlp -g https://www.youtube.com/watch?v=w87VGpgd90U)
         EOL
 
@@ -161,7 +233,7 @@ jobs:
         touch ./ww_HuanYuXinWenQuanQiu.m3u8
         sudo cat >./ww_HuanYuXinWenQuanQiu.m3u8 <<EOL
         #EXTM3U
-        #EXTINF:-1
+        #EXTINF:-1,
         $(yt-dlp -g https://www.youtube.com/watch?v=vOue3tgccd0)
         EOL
 
@@ -170,7 +242,7 @@ jobs:
         touch ./ww_HuanYuXinWen24.m3u8
         sudo cat >./ww_HuanYuXinWen24.m3u8 <<EOL
         #EXTM3U
-        #EXTINF:-1
+        #EXTINF:-1,
         $(yt-dlp -g https://www.youtube.com/watch?v=6IquAgfvYmc)
         EOL
 
@@ -179,7 +251,7 @@ jobs:
         touch ./ww_HuanYuXinWenCaiJing.m3u8
         sudo cat >./ww_HuanYuXinWenCaiJing.m3u8 <<EOL
         #EXTM3U
-        #EXTINF:-1
+        #EXTINF:-1,
         $(yt-dlp -g https://www.youtube.com/watch?v=25SE1bbTv9k)
         EOL
 
@@ -188,7 +260,7 @@ jobs:
         touch ./ww_JingXinWen.m3u8
         sudo cat >./ww_JingXinWen.m3u8 <<EOL
         #EXTM3U
-        #EXTINF:-1
+        #EXTINF:-1,
         $(yt-dlp -g https://www.youtube.com/watch?v=5n0y6b0Q25o)
         EOL
 
@@ -197,7 +269,7 @@ jobs:
         touch ./ww_ZhangHuaShengHuo.m3u8
         sudo cat >./ww_ZhangHuaShengHuo.m3u8 <<EOL
         #EXTM3U
-        #EXTINF:-1
+        #EXTINF:-1,
         $(yt-dlp -g https://www.youtube.com/watch?v=V2RdYQsVXzA)
         EOL
 
@@ -206,7 +278,7 @@ jobs:
         touch ./ww_YOYOTV.m3u8
         sudo cat >./ww_YOYOTV.m3u8 <<EOL
         #EXTM3U
-        #EXTINF:-1
+        #EXTINF:-1,
         $(yt-dlp -g https://www.youtube.com/watch?v=_gksNoedJ7o)
         EOL
 
@@ -215,7 +287,7 @@ jobs:
         touch ./ww_YunTongCaiJing.m3u8
         sudo cat >./ww_YunTongCaiJing.m3u8 <<EOL
         #EXTM3U
-        #EXTINF:-1
+        #EXTINF:-1,
         $(yt-dlp -g https://www.youtube.com/watch?v=KrORwDaq0Eo)
         EOL
 
@@ -224,7 +296,7 @@ jobs:
         touch ./ww_DaAi1.m3u8
         sudo cat >./ww_DaAi1.m3u8 <<EOL
         #EXTM3U
-        #EXTINF:-1
+        #EXTINF:-1,
         $(yt-dlp -g https://www.youtube.com/watch?v=MIqUplvSRWA)
         EOL
 
@@ -233,8 +305,26 @@ jobs:
         touch ./ww_DaAi2.m3u8
         sudo cat >./ww_DaAi2.m3u8 <<EOL
         #EXTM3U
-        #EXTINF:-1
+        #EXTINF:-1,
         $(yt-dlp -g https://www.youtube.com/watch?v=DTNkEm6jaqQ)
+        EOL
+
+    - name: Get ww_TaiwanPlus.m3u8
+      run: |
+        touch ./ww_TaiwanPlus.m3u8
+        sudo cat >./ww_TaiwanPlus.m3u8 <<EOL
+        #EXTM3U
+        #EXTINF:-1,
+        $(yt-dlp -g https://www.youtube.com/watch?v=dZp87qnWelE)
+        EOL
+
+    - name: Get ww_NTDAPTV.m3u8
+      run: |
+        touch ./ww_NTDAPTV.m3u8
+        sudo cat >./ww_NTDAPTV.m3u8 <<EOL
+        #EXTM3U
+        #EXTINF:-1,
+        $(yt-dlp -g https://www.youtube.com/watch?v=WIhgU_mc05A)
         EOL
 
     - name: Get jp_ANNnews.m3u8
@@ -242,25 +332,25 @@ jobs:
         touch ./jp_ANNnews.m3u8
         sudo cat >./jp_ANNnews.m3u8 <<EOL
         #EXTM3U
-        #EXTINF:-1
+        #EXTINF:-1,
         $(yt-dlp -g https://www.youtube.com/watch?v=coYw-eVU0Ks)
         EOL
 
-    - name: Get jp_TBS_NEWS_DIG.m3u8
+    - name: Get jp_TBSNewsDIG.m3u8
       run: |
-        touch ./jp_TBS_NEWS_DIG.m3u8
-        sudo cat >./jp_TBS_NEWS_DIG.m3u8 <<EOL
+        touch ./jp_TBSNewsDIG.m3u8
+        sudo cat >./jp_TBSNewsDIG.m3u8 <<EOL
         #EXTM3U
-        #EXTINF:-1
+        #EXTINF:-1,
         $(yt-dlp -g https://www.youtube.com/watch?v=ohI356mwBp8)
         EOL
 
-    - name: Get jp_HOME_NEWS.m3u8
+    - name: Get jp_HOMENews.m3u8
       run: |
-        touch ./jp_HOME_NEWS.m3u8
-        sudo cat >./jp_HOME_NEWS.m3u8 <<EOL
+        touch ./jp_HOMENews.m3u8
+        sudo cat >./jp_HOMENews.m3u8 <<EOL
         #EXTM3U
-        #EXTINF:-1
+        #EXTINF:-1,
         $(yt-dlp -g https://www.youtube.com/watch?v=e2pgLUmaxGs)
         EOL
 
@@ -269,7 +359,7 @@ jobs:
         touch ./jp_HTBNews.m3u8
         sudo cat >./jp_HTBNews.m3u8 <<EOL
         #EXTM3U
-        #EXTINF:-1
+        #EXTINF:-1,
         $(yt-dlp -g https://www.youtube.com/watch?v=d8CrKBU99Hg)
         EOL
 
@@ -278,98 +368,8 @@ jobs:
         touch ./jp_STVNews.m3u8
         sudo cat >./jp_STVNews.m3u8 <<EOL
         #EXTM3U
-        #EXTINF:-1
+        #EXTINF:-1,
         $(yt-dlp -g https://www.youtube.com/watch?v=UNbMsJnWdDY)
-        EOL
-
-    - name: Get jp_KTSKagoshimaNews.m3u8
-      run: |
-        touch ./jp_KTSKagoshimaNews.m3u8
-        sudo cat >./jp_KTSKagoshimaNews.m3u8 <<EOL
-        #EXTM3U
-        #EXTINF:-1
-        $(yt-dlp -g https://www.youtube.com/watch?v=PCccV7cCW8M)
-        EOL
-
-    - name: Get jp_NHKWorldJapan.m3u8
-      run: |
-        touch ./jp_NHKWorldJapan.m3u8
-        sudo cat >./jp_NHKWorldJapan.m3u8 <<EOL
-        #EXTM3U
-        #EXTINF:-1
-        $(yt-dlp -g https://www.youtube.com/watch?v=f0lYkdA-Gtw)
-        EOL
-
-    - name: Get kr_KBS_KOREA.m3u8
-      run: |
-        touch ./kr_KBS_KOREA.m3u8
-        sudo cat >./kr_KBS_KOREA.m3u8 <<EOL
-        #EXTM3U
-        #EXTINF:-1
-        $(yt-dlp -g https://www.youtube.com/watch?v=OxQQsIvJTTU)
-        EOL
-
-    - name: Get kr_Arirang.m3u8
-      run: |
-        touch ./kr_Arirang.m3u8
-        sudo cat >./kr_Arirang.m3u8 <<EOL
-        #EXTM3U
-        #EXTINF:-1
-        $(yt-dlp -g https://www.youtube.com/watch?v=CJVBX7KI5nU)
-        EOL
-
-    - name: Get sg_CNA.m3u8
-      run: |
-        touch ./sg_CNA.m3u8
-        sudo cat >./sg_CNA.m3u8 <<EOL
-        #EXTM3U
-        #EXTINF:-1
-        $(yt-dlp -g https://www.youtube.com/watch?v=XWq5kBlakcQ)
-        EOL
-
-    - name: Get my_AstroAWANI.m3u8
-      run: |
-        touch ./my_AstroAWANI.m3u8
-        sudo cat >./my_AstroAWANI.m3u8 <<EOL
-        #EXTM3U
-        #EXTINF:-1
-        $(yt-dlp -g https://www.youtube.com/watch?v=txxOwpdp58Q)
-        EOL
-
-    - name: Get my_Bernama.m3u8
-      run: |
-        touch ./my_Bernama.m3u8
-        sudo cat >./my_Bernama.m3u8 <<EOL
-        #EXTM3U
-        #EXTINF:-1
-        $(yt-dlp -g https://www.youtube.com/watch?v=MWC3t08SYxY)
-        EOL
-
-    - name: Get us_CNBC.m3u8
-      run: |
-        touch ./us_CNBC.m3u8
-        sudo cat >./us_CNBC.m3u8 <<EOL
-        #EXTM3U
-        #EXTINF:-1
-        $(yt-dlp -g https://www.youtube.com/watch?v=9NyxcX3rhQs)
-        EOL
-
-    - name: Get us_NBCNewsNOW.m3u8
-      run: |
-        touch ./us_NBCNewsNOW.m3u8
-        sudo cat >./us_NBCNewsNOW.m3u8 <<EOL
-        #EXTM3U
-        #EXTINF:-1
-        $(yt-dlp -g https://www.youtube.com/watch?v=Ljx9C1Rq9g0)
-        EOL
-
-    - name: Get us_NBC2News.m3u8
-      run: |
-        touch ./us_NBC2News.m3u8
-        sudo cat >./us_NBC2News.m3u8 <<EOL
-        #EXTM3U
-        #EXTINF:-1
-        $(yt-dlp -g https://www.youtube.com/watch?v=IMNK1Mfq8FA)
         EOL
 
     - name : Upload artifact
