@@ -122,6 +122,16 @@ jobs:
         $(yt-dlp -g https://www.youtube.com/watch?v=TCnaIE_SAtM)
         EOL
 
+    - name: Get ww_GongShiXinWen.m3u8
+      run: |
+        touch ./ww_GongShiXinWen.m3u8
+        sudo cat >./ww_GongShiXinWen.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=quwqlazU-c8)
+        EOL
+
     - name: Get ww_DongSenXinWen.m3u8
       run: |
         touch ./ww_DongSenXinWen.m3u8
@@ -160,6 +170,16 @@ jobs:
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
         $(yt-dlp -g https://www.youtube.com/watch?v=WHEPzbFA3hw)
+        EOL
+
+    - name: Get ww_DongSenZongHe.m3u8
+      run: |
+        touch ./ww_DongSenZongHe.m3u8
+        sudo cat >./ww_DongSenZongHe.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=nVSkNbqpbaU)
         EOL
 
     - name: Get ww_MinShiXinWen.m3u8
@@ -302,6 +322,26 @@ jobs:
         $(yt-dlp -g https://www.youtube.com/watch?v=dZp87qnWelE)
         EOL
 
+    - name: Get ww_XinDaTV.m3u8
+      run: |
+        touch ./ww_XinDaTV.m3u8
+        sudo cat >./ww_XinDaTV.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=A2mE-s1DuFU)
+        EOL
+
+    - name: Get ww_HaiTunZongHe.m3u8
+      run: |
+        touch ./ww_HaiTunZongHe.m3u8
+        sudo cat >./ww_HaiTunZongHe.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=abplr0uWU3w)
+        EOL
+
     - name: Get ww_NTDAPTV.m3u8
       run: |
         touch ./ww_NTDAPTV.m3u8
@@ -370,46 +410,6 @@ jobs:
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
         $(yt-dlp -g https://www.youtube.com/watch?v=PCccV7cCW8M)
-        EOL
-
-    - name: Get jp_NHKWorldJapan.m3u8
-      run: |
-        touch ./jp_NHKWorldJapan.m3u8
-        sudo cat >./jp_NHKWorldJapan.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=f0lYkdA-Gtw)
-        EOL
-
-    - name: Get jp_SunTVNews.m3u8
-      run: |
-        touch ./jp_SunTVNews.m3u8
-        sudo cat >./jp_SunTVNews.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=xROJWry9lOA)
-        EOL
-
-    - name: Get jp_ABC6ch.m3u8
-      run: |
-        touch ./jp_ABC6ch.m3u8
-        sudo cat >./jp_ABC6ch.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=iNPUWKft7hA)
-        EOL
-
-    - name: Get jp_NagoyaTVnews.m3u8
-      run: |
-        touch ./jp_NagoyaTVnews.m3u8
-        sudo cat >./jp_NagoyaTVnews.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=-C6FE2m7kX8)
         EOL
 
     - name: Upload artifact
