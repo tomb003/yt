@@ -1,0 +1,430 @@
+name: y7 m3u8
+on:
+  schedule:
+    - cron: "0 */3 * * *"
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Install yt-dlp
+      run: |
+        sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
+        sudo chmod a+rx /usr/local/bin/yt-dlp
+
+    - name: Get in_BIGTVTeluguNews.m3u8
+      run: |
+        touch ./in_BIGTVTeluguNews.m3u8
+        sudo cat >./in_BIGTVTeluguNews.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=ueJsgNKeq8c)
+        EOL
+
+    - name: Get in_KalaignarTVNews.m3u8
+      run: |
+        touch ./in_KalaignarTVNews.m3u8
+        sudo cat >./in_KalaignarTVNews.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=XOCUeiExfPE)
+        EOL
+
+    - name: Get in_SaamTV.m3u8
+      run: |
+        touch ./in_SaamTV.m3u8
+        sudo cat >./in_SaamTV.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=BoEyOfgYYpI)
+        EOL
+
+    - name: Get in_NewsJ.m3u8
+      run: |
+        touch ./in_NewsJ.m3u8
+        sudo cat >./in_NewsJ.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=eBFu7PWZ8l8)
+        EOL
+
+    - name: Get in_SathiyamNews.m3u8
+      run: |
+        touch ./in_SathiyamNews.m3u8
+        sudo cat >./in_SathiyamNews.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=Yu3PIdPHqj4)
+        EOL
+
+    - name: Get in_FGNChannel.m3u8
+      run: |
+        touch ./in_FGNChannel.m3u8
+        sudo cat >./in_FGNChannel.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=dteBByWWMAk)
+        EOL
+
+    - name: Get in_KairaliNews.m3u8
+      run: |
+        touch ./in_KairaliNews.m3u8
+        sudo cat >./in_KairaliNews.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=K-OZ1WUMArA)
+        EOL
+
+    - name: Get in_ShekinahNews.m3u8
+      run: |
+        touch ./in_ShekinahNews.m3u8
+        sudo cat >./in_ShekinahNews.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=q1AW5heNVpU)
+        EOL
+
+    - name: Get in_ABPAsmita.m3u8
+      run: |
+        touch ./in_ABPAsmita.m3u8
+        sudo cat >./in_ABPAsmita.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=M50RHxcCskQ)
+        EOL
+
+    - name: Get in_OTVEnglish.m3u8
+      run: |
+        touch ./in_OTVEnglish.m3u8
+        sudo cat >./in_OTVEnglish.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=PCUv-Uip7QU)
+        EOL
+
+    - name: Get in_SwatantraTV.m3u8
+      run: |
+        touch ./in_SwatantraTV.m3u8
+        sudo cat >./in_SwatantraTV.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=8PXzLG06ywo)
+        EOL
+
+    - name: Get in_DDKashir.m3u8
+      run: |
+        touch ./in_DDKashir.m3u8
+        sudo cat >./in_DDKashir.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=EPZnG3fQixs)
+        EOL
+
+    - name: Get in_RTVNewsTelugu.m3u8
+      run: |
+        touch ./in_RTVNewsTelugu.m3u8
+        sudo cat >./in_RTVNewsTelugu.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=W6XEGVjl2Ig)
+        EOL
+
+    - name: Get in_RtvMusic.m3u8
+      run: |
+        touch ./in_RtvMusic.m3u8
+        sudo cat >./in_RtvMusic.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=WBMGKDN-AIo)
+        EOL
+
+    - name: Get in_PTCNews.m3u8
+      run: |
+        touch ./in_PTCNews.m3u8
+        sudo cat >./in_PTCNews.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=DTuhoG7tpTc)
+        EOL
+
+    - name: Get in_KanakNews.m3u8
+      run: |
+        touch ./in_KanakNews.m3u8
+        sudo cat >./in_KanakNews.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=njXehzQ1gEQ)
+        EOL
+
+    - name: Get in_CalcuttaNews.m3u8
+      run: |
+        touch ./in_CalcuttaNews.m3u8
+        sudo cat >./in_CalcuttaNews.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=Ik89cyzS_PU)
+        EOL
+
+    - name: Get in_SandeshNews.m3u8
+      run: |
+        touch ./in_SandeshNews.m3u8
+        sudo cat >./in_SandeshNews.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=sVavCptPkc8)
+        EOL
+
+    - name: Get in_NEWS9.m3u8
+      run: |
+        touch ./in_NEWS9.m3u8
+        sudo cat >./in_NEWS9.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=tFAw8jFEXMI)
+        EOL
+
+    - name: Get in_HarvestTV.m3u8
+      run: |
+        touch ./in_HarvestTV.m3u8
+        sudo cat >./in_HarvestTV.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=bCeZIGlDk4I)
+        EOL
+
+    - name: Get in_NandighoshaTV.m3u8
+      run: |
+        touch ./in_NandighoshaTV.m3u8
+        sudo cat >./in_NandighoshaTV.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=1uyNNgm56UU)
+        EOL
+
+    - name: Get in_Bharat24.m3u8
+      run: |
+        touch ./in_Bharat24.m3u8
+        sudo cat >./in_Bharat24.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=wdWUX5zrg78)
+        EOL
+
+    - name: Get in_JaiMaharashtraNews.m3u8
+      run: |
+        touch ./in_JaiMaharashtraNews.m3u8
+        sudo cat >./in_JaiMaharashtraNews.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=-PI3F_CH9NI)
+        EOL
+
+    - name: Get in_KeralaVisionNews.m3u8
+      run: |
+        touch ./in_KeralaVisionNews.m3u8
+        sudo cat >./in_KeralaVisionNews.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=mxF5NdVW3pI)
+        EOL
+
+    - name: Get in_AsianetSuvarnaNews.m3u8
+      run: |
+        touch ./in_AsianetSuvarnaNews.m3u8
+        sudo cat >./in_AsianetSuvarnaNews.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=pN8Bo4CnAxI)
+        EOL
+
+    - name: Get bd_SomoyNews.m3u8
+      run: |
+        touch ./bd_SomoyNews.m3u8
+        sudo cat >./bd_SomoyNews.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=dmGprO-4k5I)
+        EOL
+
+    - name: Get bd_JamunaTV.m3u8
+      run: |
+        touch ./bd_JamunaTV.m3u8
+        sudo cat >./bd_JamunaTV.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=IsfV7grTr9k)
+        EOL
+
+    - name: Get bd_Channel24.m3u8
+      run: |
+        touch ./bd_Channel24.m3u8
+        sudo cat >./bd_Channel24.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=RlXAbugPQDY)
+        EOL
+
+    - name: Get bd_ChanneliNews.m3u8
+      run: |
+        touch ./bd_ChanneliNews.m3u8
+        sudo cat >./bd_ChanneliNews.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=eqFbPey0Ohw)
+        EOL
+
+    - name: Get bd_RtvNews.m3u8
+      run: |
+        touch ./bd_RtvNews.m3u8
+        sudo cat >./bd_RtvNews.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=J4IDc1dZMpk)
+        EOL
+
+    - name: Get bd_EKHONTV.m3u8
+      run: |
+        touch ./bd_EKHONTV.m3u8
+        sudo cat >./bd_EKHONTV.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=EyiS7PUrb0E)
+        EOL
+
+    - name: Get ph_DZRHNews.m3u8
+      run: |
+        touch ./ph_DZRHNews.m3u8
+        sudo cat >./ph_DZRHNews.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=rlOW_ZFwK68)
+        EOL
+
+    - name: Get ph_UNTVNewsandRescue.m3u8
+      run: |
+        touch ./ph_UNTVNewsandRescue.m3u8
+        sudo cat >./ph_UNTVNewsandRescue.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=nnDNIVquXyk)
+        EOL
+
+    - name: Get id_tvOneNews.m3u8
+      run: |
+        touch ./id_tvOneNews.m3u8
+        sudo cat >./id_tvOneNews.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=yNKvkPJl-tg)
+        EOL
+
+    - name: Get id_KOMPASTV.m3u8
+      run: |
+        touch ./id_KOMPASTV.m3u8
+        sudo cat >./id_KOMPASTV.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=BBzdSRt-zSQ)
+        EOL
+
+    - name: Get id_Liputan6.m3u8
+      run: |
+        touch ./id_Liputan6.m3u8
+        sudo cat >./id_Liputan6.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=AKQmj8YHZ9c)
+        EOL
+
+    - name: Get id_METROTV.m3u8
+      run: |
+        touch ./id_METROTV.m3u8
+        sudo cat >./id_METROTV.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=XKueVSGTk2o)
+        EOL
+
+    - name: Get id_KompasTVMedan.m3u8
+      run: |
+        touch ./id_KompasTVMedan.m3u8
+        sudo cat >./id_KompasTVMedan.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=aIoBJWzthMg)
+        EOL
+
+    - name: Get ae_SkyNewsArabia.m3u8
+      run: |
+        touch ./ae_SkyNewsArabia.m3u8
+        sudo cat >./ae_SkyNewsArabia.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=me1fBxx9wJY)
+        EOL
+
+    - name: Get ae_AlMashhad.m3u8
+      run: |
+        touch ./ae_AlMashhad.m3u8
+        sudo cat >./ae_AlMashhad.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=Jh9HoOjPGjE)
+        EOL
+
+    - name: Upload artifact
+      uses: actions/upload-artifact@master
+      with:
+        name: y7 m3u8
+        path: .
+
+    - name: Git push assets to "y7" branch
+      run: |
+        git init
+        git config --local user.name "actions"
+        git config --local user.email "action@github.com"
+        git checkout -b y7
+        git add .
+        git commit -m "Update y7"
+        git remote add origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
+        git push -f -u origin y7
