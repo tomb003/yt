@@ -1,0 +1,400 @@
+name: y9 m3u8
+on:
+  schedule:
+    - cron: "0 */3 * * *"
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Install yt-dlp
+      run: |
+        sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
+        sudo chmod a+rx /usr/local/bin/yt-dlp
+
+    - name: Get tr_TRTWorld.m3u8
+      run: |
+        touch ./tr_TRTWorld.m3u8
+        sudo cat >./tr_TRTWorld.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=5VF4aor94gw)
+        EOL
+
+    - name: Get tr_TRTArabic.m3u8
+      run: |
+        touch ./tr_TRTArabic.m3u8
+        sudo cat >./tr_TRTArabic.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=vjErm8a9gGo)
+        EOL
+
+    - name: Get tr_TRTHaber.m3u8
+      run: |
+        touch ./tr_TRTHaber.m3u8
+        sudo cat >./tr_TRTHaber.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=-Lrxv1_i3qc)
+        EOL
+
+    - name: Get tr_BloombergHT.m3u8
+      run: |
+        touch ./tr_BloombergHT.m3u8
+        sudo cat >./tr_BloombergHT.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=hHSmBJk6w0c)
+        EOL
+
+    - name: Get tr_CNNTurk.m3u8
+      run: |
+        touch ./tr_CNNTurk.m3u8
+        sudo cat >./tr_CNNTurk.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=X_EWYemclKA)
+        EOL
+
+    - name: Get tr_SozcuTelevizyonu.m3u8
+      run: |
+        touch ./tr_SozcuTelevizyonu.m3u8
+        sudo cat >./tr_SozcuTelevizyonu.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=2i8lfP9oqvk)
+        EOL
+
+    - name: Get tr_HalkTV.m3u8
+      run: |
+        touch ./tr_HalkTV.m3u8
+        sudo cat >./tr_HalkTV.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=_FUlFVJo77I)
+        EOL
+
+    - name: Get tr_HaberGlobal.m3u8
+      run: |
+        touch ./tr_HaberGlobal.m3u8
+        sudo cat >./tr_HaberGlobal.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=6BX-NUzBSp8)
+        EOL
+
+    - name: Get tr_NTV.m3u8
+      run: |
+        touch ./tr_NTV.m3u8
+        sudo cat >./tr_NTV.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=XEJM4Hcgd3M)
+        EOL
+
+    - name: Get tr_atv.m3u8
+      run: |
+        touch ./tr_atv.m3u8
+        sudo cat >./tr_atv.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=zmFaUZwKVF4)
+        EOL
+
+    - name: Get tr_ShowTV.m3u8
+      run: |
+        touch ./tr_ShowTV.m3u8
+        sudo cat >./tr_ShowTV.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=eVJ3XBDXgfU)
+        EOL
+
+    - name: Get tr_ShowTurk.m3u8
+      run: |
+        touch ./tr_ShowTurk.m3u8
+        sudo cat >./tr_ShowTurk.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=XnvS-RZa4Qw)
+        EOL
+
+    - name: Get tr_ShowMAX.m3u8
+      run: |
+        touch ./tr_ShowMAX.m3u8
+        sudo cat >./tr_ShowMAX.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=Y3vGHFrsqrs)
+        EOL
+
+    - name: Get tr_HaberTurkTV.m3u8
+      run: |
+        touch ./tr_HaberTurkTV.m3u8
+        sudo cat >./tr_HaberTurkTV.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=mONoowXiLr0)
+        EOL
+
+    - name: Get tr_StarTV.m3u8
+      run: |
+        touch ./tr_StarTV.m3u8
+        sudo cat >./tr_StarTV.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=82O6yOy_XwE)
+        EOL
+
+    - name: Get tr_ASpor.m3u8
+      run: |
+        touch ./tr_ASpor.m3u8
+        sudo cat >./tr_ASpor.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=xrf_RbM_MNk)
+        EOL
+
+    - name: Get tr_Tele1.m3u8
+      run: |
+        touch ./tr_Tele1.m3u8
+        sudo cat >./tr_Tele1.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=j6nk0Oc9-XQ)
+        EOL
+
+    - name: Get tr_TJKTV.m3u8
+      run: |
+        touch ./tr_TJKTV.m3u8
+        sudo cat >./tr_TJKTV.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=kDvc4MSsnyI)
+        EOL
+
+    - name: Get tr_AHaber.m3u8
+      run: |
+        touch ./tr_AHaber.m3u8
+        sudo cat >./tr_AHaber.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=acwBho1oqcg)
+        EOL
+
+    - name: Get tr_KRTTV.m3u8
+      run: |
+        touch ./tr_KRTTV.m3u8
+        sudo cat >./tr_KRTTV.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=96HS_36B8RI)
+        EOL
+
+    - name: Get tr_beinSportsTurkiye.m3u8
+      run: |
+        touch ./tr_beinSportsTurkiye.m3u8
+        sudo cat >./tr_beinSportsTurkiye.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=OypUpUTYAHI)
+        EOL
+
+    - name: Get tr_TRT1.m3u8
+      run: |
+        touch ./tr_TRT1.m3u8
+        sudo cat >./tr_TRT1.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=TdG5kIDVsVw)
+        EOL
+
+    - name: Get tr_TVNET.m3u8
+      run: |
+        touch ./tr_TVNET.m3u8
+        sudo cat >./tr_TVNET.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=E1OK-dhjKgs)
+        EOL
+
+    - name: Get tr_DiyanetTV.m3u8
+      run: |
+        touch ./tr_DiyanetTV.m3u8
+        sudo cat >./tr_DiyanetTV.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=OXctn6ADBug)
+        EOL
+
+    - name: Get tr_a2.m3u8
+      run: |
+        touch ./tr_a2.m3u8
+        sudo cat >./tr_a2.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=78GDLDmCmIU)
+        EOL
+
+    - name: Get tr_TAYTV.m3u8
+      run: |
+        touch ./tr_TAYTV.m3u8
+        sudo cat >./tr_TAYTV.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=BWdSUAyIIO8)
+        EOL
+
+    - name: Get tr_UlusalKanal.m3u8
+      run: |
+        touch ./tr_UlusalKanal.m3u8
+        sudo cat >./tr_UlusalKanal.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=Wq612S1F0T4)
+        EOL
+
+    - name: Get tr_UlkeTV.m3u8
+      run: |
+        touch ./tr_UlkeTV.m3u8
+        sudo cat >./tr_UlkeTV.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=hRQZ2oJ-eSY)
+        EOL
+
+    - name: Get tr_VavTV.m3u8
+      run: |
+        touch ./tr_VavTV.m3u8
+        sudo cat >./tr_VavTV.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=xNNrCVKsn4Q)
+        EOL
+
+    - name: Get ar_TodoNoticias.m3u8
+      run: |
+        touch ./ar_TodoNoticias.m3u8
+        sudo cat >./ar_TodoNoticias.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=cb12KmMMDJA)
+        EOL
+
+    - name: Get ar_CronicaTV.m3u8
+      run: |
+        touch ./ar_CronicaTV.m3u8
+        sudo cat >./ar_CronicaTV.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=avly0uwZzOE)
+        EOL
+
+    - name: Get ar_ElSieteTV.m3u8
+      run: |
+        touch ./ar_ElSieteTV.m3u8
+        sudo cat >./ar_ElSieteTV.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=Vh8xmLBJtR8)
+        EOL
+
+    - name: Get ar_C5N.m3u8
+      run: |
+        touch ./ar_C5N.m3u8
+        sudo cat >./ar_C5N.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=XKEBqDusJu0)
+        EOL
+
+    - name: Get ar_A24ENVIVO.m3u8
+      run: |
+        touch ./ar_A24ENVIVO.m3u8
+        sudo cat >./ar_A24ENVIVO.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=QGpHLgRnrx4)
+        EOL
+
+    - name: Get ar_AmericaTV.m3u8
+      run: |
+        touch ./ar_AmericaTV.m3u8
+        sudo cat >./ar_AmericaTV.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=zcWXboTnous)
+        EOL
+
+    - name: Get ar_ElDoce.m3u8
+      run: |
+        touch ./ar_ElDoce.m3u8
+        sudo cat >./ar_ElDoce.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=lZgz9ZV6mAU)
+        EOL
+
+    - name: Get ar_Canal26.m3u8
+      run: |
+        touch ./ar_Canal26.m3u8
+        sudo cat >./ar_Canal26.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=RnTmtVFTSf0)
+        EOL
+
+    - name: Upload artifact
+      uses: actions/upload-artifact@master
+      with:
+        name: y9 m3u8
+        path: .
+
+    - name: Git push assets to "y9" branch
+      run: |
+        git init
+        git config --local user.name "actions"
+        git config --local user.email "action@github.com"
+        git checkout -b y9
+        git add .
+        git commit -m "Update y9"
+        git remote add origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
+        git push -f -u origin y9
