@@ -232,16 +232,6 @@ jobs:
         $(yt-dlp -g https://www.youtube.com/watch?v=mxF5NdVW3pI)
         EOL
 
-    - name: Get in_AsianetSuvarnaNews.m3u8
-      run: |
-        touch ./in_AsianetSuvarnaNews.m3u8
-        sudo cat >./in_AsianetSuvarnaNews.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=pN8Bo4CnAxI)
-        EOL
-
     - name: Get bd_SomoyNews.m3u8
       run: |
         touch ./bd_SomoyNews.m3u8
@@ -332,6 +322,16 @@ jobs:
         $(yt-dlp -g https://www.youtube.com/watch?v=BBzdSRt-zSQ)
         EOL
 
+    - name: Get id_KompasTVMedan.m3u8
+      run: |
+        touch ./id_KompasTVMedan.m3u8
+        sudo cat >./id_KompasTVMedan.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=aIoBJWzthMg)
+        EOL
+
     - name: Get id_Liputan6.m3u8
       run: |
         touch ./id_Liputan6.m3u8
@@ -350,16 +350,6 @@ jobs:
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
         $(yt-dlp -g https://www.youtube.com/watch?v=XKueVSGTk2o)
-        EOL
-
-    - name: Get id_KompasTVMedan.m3u8
-      run: |
-        touch ./id_KompasTVMedan.m3u8
-        sudo cat >./id_KompasTVMedan.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=aIoBJWzthMg)
         EOL
 
     - name: Get ae_SkyNewsArabia.m3u8
