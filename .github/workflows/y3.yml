@@ -1,0 +1,430 @@
+name: y3 m3u8
+on:
+  schedule:
+    - cron: "0 */3 * * *"
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Install yt-dlp
+      run: |
+        sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
+        sudo chmod a+rx /usr/local/bin/yt-dlp
+
+    - name: Get us_CNBC.m3u8
+      run: |
+        touch ./us_CNBC.m3u8
+        sudo cat >./us_CNBC.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=9NyxcX3rhQs)
+        EOL
+
+    - name: Get us_NBC2News.m3u8
+      run: |
+        touch ./us_NBC2News.m3u8
+        sudo cat >./us_NBC2News.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=IMNK1Mfq8FA)
+        EOL
+
+    - name: Get us_FoxNewsNow.m3u8
+      run: |
+        touch ./us_FoxNewsNow.m3u8
+        sudo cat >./us_FoxNewsNow.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=3_-jZqsQqdk)
+        EOL
+
+    - name: Get us_FOXWeather.m3u8
+      run: |
+        touch ./us_FOXWeather.m3u8
+        sudo cat >./us_FOXWeather.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=iesPl7zRbVY)
+        EOL
+
+    - name: Get us_ABCNews.m3u8
+      run: |
+        touch ./us_ABCNews.m3u8
+        sudo cat >./us_ABCNews.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=OOtxXPaQvoM)
+        EOL
+
+    - name: Get us_ABC7NewsSWFL.m3u8
+      run: |
+        touch ./us_ABC7NewsSWFL.m3u8
+        sudo cat >./us_ABC7NewsSWFL.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=eXZ4-qp16nI)
+        EOL
+
+    - name: Get us_ABC7EyewitnessNews.m3u8
+      run: |
+        touch ./us_ABC7EyewitnessNews.m3u8
+        sudo cat >./us_ABC7EyewitnessNews.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=-E0AHOOGo24)
+        EOL
+
+    - name: Get us_WPBF25News.m3u8
+      run: |
+        touch ./us_WPBF25News.m3u8
+        sudo cat >./us_WPBF25News.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=fEre4q2xFLc)
+        EOL
+
+    - name: Get us_WPLGLocal10.m3u8
+      run: |
+        touch ./us_WPLGLocal10.m3u8
+        sudo cat >./us_WPLGLocal10.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=XdEZ9bMM0AI)
+        EOL
+
+    - name: Get us_CNBCArabia.m3u8
+      run: |
+        touch ./us_CNBCArabia.m3u8
+        sudo cat >./us_CNBCArabia.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=I-qP4xS7vPg)
+        EOL
+
+    - name: Get us_BloombergBusinessNews.m3u8
+      run: |
+        touch ./us_BloombergBusinessNews.m3u8
+        sudo cat >./us_BloombergBusinessNews.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=iyOq8DhaMYw)
+        EOL
+
+    - name: Get us_BloombergOriginals.m3u8
+      run: |
+        touch ./us_BloombergOriginals.m3u8
+        sudo cat >./us_BloombergOriginals.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=DxmDPrfinXY)
+        EOL
+
+    - name: Get us_BloombergQuicktakeExplained.m3u8
+      run: |
+        touch ./us_BloombergQuicktakeExplained.m3u8
+        sudo cat >./us_BloombergQuicktakeExplained.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=VRZDyw7V26o)
+        EOL
+
+    - name: Get us_NationalGeographic.m3u8
+      run: |
+        touch ./us_NationalGeographic.m3u8
+        sudo cat >./us_NationalGeographic.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=gsA3-3_Cl8s)
+        EOL
+
+    - name: Get us_NatGeoWILD.m3u8
+      run: |
+        touch ./us_NatGeoWILD.m3u8
+        sudo cat >./us_NatGeoWILD.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=BJ3Yv572V1A)
+        EOL
+
+    - name: Get us_SonLifeBroadcastingNetwork.m3u8
+      run: |
+        touch ./us_SonLifeBroadcastingNetwork.m3u8
+        sudo cat >./us_SonLifeBroadcastingNetwork.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=QIGUhlmkRZI)
+        EOL
+
+    - name: Get us_YahooFinance.m3u8
+      run: |
+        touch ./us_YahooFinance.m3u8
+        sudo cat >./us_YahooFinance.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=jRFnF2e2MlY)
+        EOL
+
+    - name: Get us_SchwabNetwork.m3u8
+      run: |
+        touch ./us_SchwabNetwork.m3u8
+        sudo cat >./us_SchwabNetwork.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=BWhVz1ozr1o)
+        EOL
+
+    - name: Get us_WCVBChannel5Boston.m3u8
+      run: |
+        touch ./us_WCVBChannel5Boston.m3u8
+        sudo cat >./us_WCVBChannel5Boston.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=2-ZjgwjSa_w)
+        EOL
+
+    - name: Get us_4029News.m3u8
+      run: |
+        touch ./us_4029News.m3u8
+        sudo cat >./us_4029News.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=DAiTL-dBYrQ)
+        EOL
+
+    - name: Get us_News12NewYork.m3u8
+      run: |
+        touch ./us_News12NewYork.m3u8
+        sudo cat >./us_News12NewYork.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=wZNdCVQKcoA)
+        EOL
+
+    - name: Get us_WRAL.m3u8
+      run: |
+        touch ./us_WRAL.m3u8
+        sudo cat >./us_WRAL.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=i10InF4Y0cw)
+        EOL
+
+    - name: Get us_KCRA3.m3u8
+      run: |
+        touch ./us_KCRA3.m3u8
+        sudo cat >./us_KCRA3.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=q-13104NeAU)
+        EOL
+
+    - name: Get us_WESH2News.m3u8
+      run: |
+        touch ./us_WESH2News.m3u8
+        sudo cat >./us_WESH2News.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=NFbd7i7x0B8)
+        EOL
+
+    - name: Get us_WMURTV.m3u8
+      run: |
+        touch ./us_WMURTV.m3u8
+        sudo cat >./us_WMURTV.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=5PthjDwmQIc)
+        EOL
+
+    - name: Get us_WMTWTV.m3u8
+      run: |
+        touch ./us_WMTWTV.m3u8
+        sudo cat >./us_WMTWTV.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=bcvI5SO-NGs)
+        EOL
+
+    - name: Get us_KOCO5News.m3u8
+      run: |
+        touch ./us_KOCO5News.m3u8
+        sudo cat >./us_KOCO5News.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=IL1Z3wcBJo0)
+        EOL
+
+    - name: Get us_USATODAY.m3u8
+      run: |
+        touch ./us_USATODAY.m3u8
+        sudo cat >./us_USATODAY.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=vZYMwAm8sso)
+        EOL
+
+    - name: Get us_CBNnews.m3u8
+      run: |
+        touch ./us_CBNnews.m3u8
+        sudo cat >./us_CBNnews.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=CG2XDTgvZPo)
+        EOL
+
+    - name: Get us_WVTM13News.m3u8
+      run: |
+        touch ./us_WVTM13News.m3u8
+        sudo cat >./us_WVTM13News.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=FuHrKpuJ0eo)
+        EOL
+
+    - name: Get us_KSBWActionNews8.m3u8
+      run: |
+        touch ./us_KSBWActionNews8.m3u8
+        sudo cat >./us_KSBWActionNews8.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=-KjSfPIJoy8)
+        EOL
+
+    - name: Get us_CurrentTimeTV.m3u8
+      run: |
+        touch ./us_CurrentTimeTV.m3u8
+        sudo cat >./us_CurrentTimeTV.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=t9Ilev-uk4w)
+        EOL
+
+    - name: Get us_16WAPTNews.m3u8
+      run: |
+        touch ./us_16WAPTNews.m3u8
+        sudo cat >./us_16WAPTNews.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=H3OIvmzT29M)
+        EOL
+
+    - name: Get uk_GBNews.m3u8
+      run: |
+        touch ./uk_GBNews.m3u8
+        sudo cat >./uk_GBNews.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=8WX6YL9JnLw)
+        EOL
+
+    - name: Get uk_BBCNewsArabic.m3u8
+      run: |
+        touch ./uk_BBCNewsArabic.m3u8
+        sudo cat >./uk_BBCNewsArabic.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=sjSicV3RmFQ)
+        EOL
+
+    - name: Get uk_BBCNewsPersian.m3u8
+      run: |
+        touch ./uk_BBCNewsPersian.m3u8
+        sudo cat >./uk_BBCNewsPersian.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=zP-8G1UsdFc)
+        EOL
+
+    - name: Get uk_TalkTV.m3u8
+      run: |
+        touch ./uk_TalkTV.m3u8
+        sudo cat >./uk_TalkTV.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=WguRyzIb4bE)
+        EOL
+
+    - name: Get my_AstroAWANI.m3u8
+      run: |
+        touch ./my_AstroAWANI.m3u8
+        sudo cat >./my_AstroAWANI.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=txxOwpdp58Q)
+        EOL
+
+    - name: Get my_Bernama.m3u8
+      run: |
+        touch ./my_Bernama.m3u8
+        sudo cat >./my_Bernama.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=MWC3t08SYxY)
+        EOL
+
+    - name: Get my_BeritaRTM.m3u8
+      run: |
+        touch ./my_BeritaRTM.m3u8
+        sudo cat >./my_BeritaRTM.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=5gZdL9Ls2k8)
+        EOL
+
+    - name: Upload artifact
+      uses: actions/upload-artifact@master
+      with:
+        name: y3 m3u8
+        path: .
+
+    - name: Git push assets to "y3" branch
+      run: |
+        git init
+        git config --local user.name "actions"
+        git config --local user.email "action@github.com"
+        git checkout -b y3
+        git add .
+        git commit -m "Update y3"
+        git remote add origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
+        git push -f -u origin y3
