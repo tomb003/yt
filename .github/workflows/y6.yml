@@ -1,0 +1,430 @@
+name: y6 m3u8
+on:
+  schedule:
+    - cron: "0 */3 * * *"
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Install yt-dlp
+      run: |
+        sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
+        sudo chmod a+rx /usr/local/bin/yt-dlp
+
+    - name: Get in_News18Bangla.m3u8
+      run: |
+        touch ./in_News18Bangla.m3u8
+        sudo cat >./in_News18Bangla.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=k-BJvSepFm0)
+        EOL
+
+    - name: Get in_News18Kannada.m3u8
+      run: |
+        touch ./in_News18Kannada.m3u8
+        sudo cat >./in_News18Kannada.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=gAsO9GqCL0c)
+        EOL
+
+    - name: Get in_News18Urdu.m3u8
+      run: |
+        touch ./in_News18Urdu.m3u8
+        sudo cat >./in_News18Urdu.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=jxjfzzHPqPU)
+        EOL
+
+    - name: Get in_News18UPUttarakhand.m3u8
+      run: |
+        touch ./in_News18UPUttarakhand.m3u8
+        sudo cat >./in_News18UPUttarakhand.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=osTlRs49-Uk)
+        EOL
+
+    - name: Get in_News18Punjab.m3u8
+      run: |
+        touch ./in_News18Punjab.m3u8
+        sudo cat >./in_News18Punjab.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=FunSB14ylVc)
+        EOL
+
+    - name: Get in_News18Lokmat.m3u8
+      run: |
+        touch ./in_News18Lokmat.m3u8
+        sudo cat >./in_News18Lokmat.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=1I_23AuFSoM)
+        EOL
+
+    - name: Get in_News18Tamilnadu.m3u8
+      run: |
+        touch ./in_News18Tamilnadu.m3u8
+        sudo cat >./in_News18Tamilnadu.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=mQrZJFyYzlI)
+        EOL
+
+    - name: Get in_News18BiharJharkhand.m3u8
+      run: |
+        touch ./in_News18BiharJharkhand.m3u8
+        sudo cat >./in_News18BiharJharkhand.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=iDfb2wy5jcU)
+        EOL
+
+    - name: Get in_News18Kerala.m3u8
+      run: |
+        touch ./in_News18Kerala.m3u8
+        sudo cat >./in_News18Kerala.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=ehbpeMBKKC8)
+        EOL
+
+    - name: Get in_News18Gujarati.m3u8
+      run: |
+        touch ./in_News18Gujarati.m3u8
+        sudo cat >./in_News18Gujarati.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=YVTk2c-e-J4)
+        EOL
+
+    - name: Get in_News18JKLH.m3u8
+      run: |
+        touch ./in_News18JKLH.m3u8
+        sudo cat >./in_News18JKLH.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=zWEaEGMNOv4)
+        EOL
+
+    - name: Get in_News18Odia.m3u8
+      run: |
+        touch ./in_News18Odia.m3u8
+        sudo cat >./in_News18Odia.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=BKcu6c0tQ1o)
+        EOL
+
+    - name: Get in_AsianetSuvarnaNews.m3u8
+      run: |
+        touch ./in_AsianetSuvarnaNews.m3u8
+        sudo cat >./in_AsianetSuvarnaNews.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=pN8Bo4CnAxI)
+        EOL
+
+    - name: Get in_ABNTelugu.m3u8
+      run: |
+        touch ./in_ABNTelugu.m3u8
+        sudo cat >./in_ABNTelugu.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=Q-nSNssz3p0)
+        EOL
+
+    - name: Get in_ABNDigitalExclusives.m3u8
+      run: |
+        touch ./in_ABNDigitalExclusives.m3u8
+        sudo cat >./in_ABNDigitalExclusives.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=uf5aOXorX1w)
+        EOL
+
+    - name: Get in_SunNews.m3u8
+      run: |
+        touch ./in_SunNews.m3u8
+        sudo cat >./in_SunNews.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=2ywxK3HC4iA)
+        EOL
+
+    - name: Get in_V6NewsTelugu.m3u8
+      run: |
+        touch ./in_V6NewsTelugu.m3u8
+        sudo cat >./in_V6NewsTelugu.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=_xtceKvlVYQ)
+        EOL
+
+    - name: Get in_TV5TeluguNews.m3u8
+      run: |
+        touch ./in_TV5TeluguNews.m3u8
+        sudo cat >./in_TV5TeluguNews.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=ox2rT1KRkFI)
+        EOL
+
+    - name: Get in_TV5Kannada.m3u8
+      run: |
+        touch ./in_TV5Kannada.m3u8
+        sudo cat >./in_TV5Kannada.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=VZ2aABHh0Hg)
+        EOL
+
+    - name: Get in_GoodNewsToday.m3u8
+      run: |
+        touch ./in_GoodNewsToday.m3u8
+        sudo cat >./in_GoodNewsToday.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=CaiAlIIEgs0)
+        EOL
+
+    - name: Get in_ETVTelangana.m3u8
+      run: |
+        touch ./in_ETVTelangana.m3u8
+        sudo cat >./in_ETVTelangana.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=tWsm6wkScBo)
+        EOL
+
+    - name: Get in_ETVAndhraPradesh.m3u8
+      run: |
+        touch ./in_ETVAndhraPradesh.m3u8
+        sudo cat >./in_ETVAndhraPradesh.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=GI-8sFxRoyw)
+        EOL
+
+    - name: Get in_DDNews.m3u8
+      run: |
+        touch ./in_DDNews.m3u8
+        sudo cat >./in_DDNews.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=zUlhju0XVyE)
+        EOL
+
+    - name: Get in_DDIndia.m3u8
+      run: |
+        touch ./in_DDIndia.m3u8
+        sudo cat >./in_DDIndia.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=c0HOSjlniKs)
+        EOL
+
+    - name: Get in_ReporterTV.m3u8
+      run: |
+        touch ./in_ReporterTV.m3u8
+        sudo cat >./in_ReporterTV.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=HGOiuQUwqEw)
+        EOL
+
+    - name: Get in_ManoramaNews.m3u8
+      run: |
+        touch ./in_ManoramaNews.m3u8
+        sudo cat >./in_ManoramaNews.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=tgBTspqA5nY)
+        EOL
+
+    - name: Get in_MahaaNews.m3u8
+      run: |
+        touch ./in_MahaaNews.m3u8
+        sudo cat >./in_MahaaNews.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=kHKCbtdahX8)
+        EOL
+
+    - name: Get in_PolimerNews.m3u8
+      run: |
+        touch ./in_PolimerNews.m3u8
+        sudo cat >./in_PolimerNews.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=DNnfrmjcHHo)
+        EOL
+
+    - name: Get in_PuthiyaThalaimuraiTV.m3u8
+      run: |
+        touch ./in_PuthiyaThalaimuraiTV.m3u8
+        sudo cat >./in_PuthiyaThalaimuraiTV.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=ccZpGXxmkhs)
+        EOL
+
+    - name: Get in_ThanthiTV.m3u8
+      run: |
+        touch ./in_ThanthiTV.m3u8
+        sudo cat >./in_ThanthiTV.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=FeweQREkl44)
+        EOL
+
+    - name: Get in_MathrubhumiNews.m3u8
+      run: |
+        touch ./in_MathrubhumiNews.m3u8
+        sudo cat >./in_MathrubhumiNews.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=YGEgelAiUf0)
+        EOL
+
+    - name: Get in_NewsFirstKannada.m3u8
+      run: |
+        touch ./in_NewsFirstKannada.m3u8
+        sudo cat >./in_NewsFirstKannada.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=9f3pSQ5Oio8)
+        EOL
+
+    - name: Get in_JanamTV.m3u8
+      run: |
+        touch ./in_JanamTV.m3u8
+        sudo cat >./in_JanamTV.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=mCqZrEY5_jI)
+        EOL
+
+    - name: Get in_RajasthanPatrika.m3u8
+      run: |
+        touch ./in_RajasthanPatrika.m3u8
+        sudo cat >./in_RajasthanPatrika.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=ADWZd3nVDXI)
+        EOL
+
+    - name: Get in_VistaraNews.m3u8
+      run: |
+        touch ./in_VistaraNews.m3u8
+        sudo cat >./in_VistaraNews.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=-H_oyAV-n9Y)
+        EOL
+
+    - name: Get in_hmtvNews.m3u8
+      run: |
+        touch ./in_hmtvNews.m3u8
+        sudo cat >./in_hmtvNews.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=Li1ZA566CIo)
+        EOL
+
+    - name: Get in_10TVNewsTelugu.m3u8
+      run: |
+        touch ./in_10TVNewsTelugu.m3u8
+        sudo cat >./in_10TVNewsTelugu.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=byG7EGw9NPs)
+        EOL
+
+    - name: Get in_ETNowSwadesh.m3u8
+      run: |
+        touch ./in_ETNowSwadesh.m3u8
+        sudo cat >./in_ETNowSwadesh.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=lXHQaU93Mu4)
+        EOL
+
+    - name: Get in_TnewsTelugu.m3u8
+      run: |
+        touch ./in_TnewsTelugu.m3u8
+        sudo cat >./in_TnewsTelugu.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=msnakfGHabg)
+        EOL
+
+    - name: Get in_Prime9News.m3u8
+      run: |
+        touch ./in_Prime9News.m3u8
+        sudo cat >./in_Prime9News.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=4PpS_RGUzfQ)
+        EOL
+
+    - name: Upload artifact
+      uses: actions/upload-artifact@master
+      with:
+        name: y6 m3u8
+        path: .
+
+    - name: Git push assets to "y6" branch
+      run: |
+        git init
+        git config --local user.name "actions"
+        git config --local user.email "action@github.com"
+        git checkout -b y6
+        git add .
+        git commit -m "Update y6"
+        git remote add origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
+        git push -f -u origin y6
