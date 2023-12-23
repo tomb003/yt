@@ -62,16 +62,6 @@ jobs:
         $(yt-dlp -g https://www.youtube.com/watch?v=Yu3PIdPHqj4)
         EOL
 
-    - name: Get in_FGNChannel.m3u8
-      run: |
-        touch ./in_FGNChannel.m3u8
-        sudo cat >./in_FGNChannel.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=dteBByWWMAk)
-        EOL
-
     - name: Get in_KairaliNews.m3u8
       run: |
         touch ./in_KairaliNews.m3u8
@@ -182,16 +172,6 @@ jobs:
         $(yt-dlp -g https://www.youtube.com/watch?v=Ik89cyzS_PU)
         EOL
 
-    - name: Get in_SandeshNews.m3u8
-      run: |
-        touch ./in_SandeshNews.m3u8
-        sudo cat >./in_SandeshNews.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=sVavCptPkc8)
-        EOL
-
     - name: Get in_NEWS9.m3u8
       run: |
         touch ./in_NEWS9.m3u8
@@ -270,16 +250,6 @@ jobs:
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
         $(yt-dlp -g https://www.youtube.com/watch?v=dmGprO-4k5I)
-        EOL
-
-    - name: Get bd_JamunaTV.m3u8
-      run: |
-        touch ./bd_JamunaTV.m3u8
-        sudo cat >./bd_JamunaTV.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=IsfV7grTr9k)
         EOL
 
     - name: Get bd_Channel24.m3u8
