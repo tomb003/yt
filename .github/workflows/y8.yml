@@ -39,7 +39,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=8-DadxMqFrg)
+        $(yt-dlp -g https://www.youtube.com/watch?v=FO5YhyqIFmQ)
         EOL
 
     - name: Get pk_SAMAANews.m3u8
@@ -80,16 +80,6 @@ jobs:
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
         $(yt-dlp -g https://www.youtube.com/watch?v=LrgH83Fxo58)
-        EOL
-
-    - name: Get pk_ARYNews.m3u8
-      run: |
-        touch ./pk_ARYNews.m3u8
-        sudo cat >./pk_ARYNews.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=sUKwTVAc0Vo)
         EOL
 
     - name: Get pk_ARYQtv.m3u8
@@ -150,16 +140,6 @@ jobs:
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
         $(yt-dlp -g https://www.youtube.com/watch?v=a4nT8G0Jgfo)
-        EOL
-
-    - name: Get pk_Metro1News.m3u8
-      run: |
-        touch ./pk_Metro1News.m3u8
-        sudo cat >./pk_Metro1News.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=LisP721hJ-o)
         EOL
 
     - name: Get pk_GTVNetworkHD.m3u8
@@ -269,7 +249,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=RD2u664ZKCE)
+        $(yt-dlp -g https://www.youtube.com/watch?v=_U7XeOjiejI)
         EOL
 
     - name: Get lb_AlMayadeen.m3u8
@@ -290,16 +270,6 @@ jobs:
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
         $(yt-dlp -g https://www.youtube.com/watch?v=vbfVs2Ku5E0)
-        EOL
-
-    - name: Get eg_AlQaheraNews.m3u8
-      run: |
-        touch ./eg_AlQaheraNews.m3u8
-        sudo cat >./eg_AlQaheraNews.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=QCMQjuyB5lU)
         EOL
 
     - name: Get eg_alkaherawalnas.m3u8
@@ -370,36 +340,6 @@ jobs:
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
         $(yt-dlp -g https://www.youtube.com/watch?v=4dpOXuRL50E)
-        EOL
-
-    - name: Get mx_MILENIO.m3u8
-      run: |
-        touch ./mx_MILENIO.m3u8
-        sudo cat >./mx_MILENIO.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=tOewEuByv-U)
-        EOL
-
-    - name: Get mx_TelediarioMx.m3u8
-      run: |
-        touch ./mx_TelediarioMx.m3u8
-        sudo cat >./mx_TelediarioMx.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=y165uqCR2ec)
-        EOL
-
-    - name: Get mx_NMas.m3u8
-      run: |
-        touch ./mx_NMas.m3u8
-        sudo cat >./mx_NMas.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=prpSI_M_rSA)
         EOL
 
     - name: Get mx_TelevisaPuebla.m3u8
