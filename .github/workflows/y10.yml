@@ -1,0 +1,150 @@
+name: y10 m3u8
+on:
+  schedule:
+    - cron: "0 */3 * * *"
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Install yt-dlp
+      run: |
+        sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
+        sudo chmod a+rx /usr/local/bin/yt-dlp
+
+    - name: Get ww_TVBSXinWen.m3u8
+      run: |
+        touch ./ww_TVBSXinWen.m3u8
+        sudo cat >./ww_TVBSXinWen.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=2mCSYvcfhtc)
+        EOL
+
+    - name: Get ww_TVBSXuanXinWen.m3u8
+      run: |
+        touch ./ww_TVBSXuanXinWen.m3u8
+        sudo cat >./ww_TVBSXuanXinWen.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=YvdcZ_jpLXE)
+        EOL
+
+    - name: Get ww_HuaShiXinWenZiXun.m3u8
+      run: |
+        touch ./ww_HuaShiXinWenZiXun.m3u8
+        sudo cat >./ww_HuaShiXinWenZiXun.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=wM0g8EoUZ_E)
+        EOL
+
+    - name: Get ww_DongSenLive.m3u8
+      run: |
+        touch ./ww_DongSenLive.m3u8
+        sudo cat >./ww_DongSenLive.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=E0zhe2gkXBs)
+        EOL
+
+    - name: Get ww_SanLiLive.m3u8
+      run: |
+        touch ./ww_SanLiLive.m3u8
+        sudo cat >./ww_SanLiLive.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=FoBfXvlOR6I)
+        EOL
+
+    - name: Get kr_YTNNews24.m3u8
+      run: |
+        touch ./kr_YTNNews24.m3u8
+        sudo cat >./kr_YTNNews24.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=FJfwehhzIhw)
+        EOL
+
+    - name: Get kr_YTNdmb.m3u8
+      run: |
+        touch ./kr_YTNdmb.m3u8
+        sudo cat >./kr_YTNdmb.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=2C2WCLhDsR4)
+        EOL
+
+    - name: Get co_NoticiasCaracol.m3u8
+      run: |
+        touch ./co_NoticiasCaracol.m3u8
+        sudo cat >./co_NoticiasCaracol.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=oQgM6peiUKY)
+        EOL
+
+    - name: Get pk_ARYNews.m3u8
+      run: |
+        touch ./pk_ARYNews.m3u8
+        sudo cat >./pk_ARYNews.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=sUKwTVAc0Vo)
+        EOL
+
+    - name: Get mx_MILENIO.m3u8
+      run: |
+        touch ./mx_MILENIO.m3u8
+        sudo cat >./mx_MILENIO.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=tOewEuByv-U)
+        EOL
+
+    - name: Get mx_TelediarioMx.m3u8
+      run: |
+        touch ./mx_TelediarioMx.m3u8
+        sudo cat >./mx_TelediarioMx.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=y165uqCR2ec)
+        EOL
+
+    - name: Get mx_NMas.m3u8
+      run: |
+        touch ./mx_NMas.m3u8
+        sudo cat >./mx_NMas.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=prpSI_M_rSA)
+        EOL
+
+    - name: Upload artifact
+      uses: actions/upload-artifact@master
+      with:
+        name: y10 m3u8
+        path: .
+
+    - name: Git push assets to "y10" branch
+      run: |
+        git init
+        git config --local user.name "actions"
+        git config --local user.email "action@github.com"
+        git checkout -b y10
+        git add .
+        git commit -m "Update y10"
+        git remote add origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
+        git push -f -u origin y10
