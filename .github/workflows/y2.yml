@@ -72,16 +72,6 @@ jobs:
         $(yt-dlp -g https://www.youtube.com/watch?v=Jc_MexRxmDM)
         EOL
 
-    - name: Get kr_KBS_KOREA.m3u8
-      run: |
-        touch ./kr_KBS_KOREA.m3u8
-        sudo cat >./kr_KBS_KOREA.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=OxQQsIvJTTU)
-        EOL
-
     - name: Get kr_Arirang.m3u8
       run: |
         touch ./kr_Arirang.m3u8
@@ -232,24 +222,14 @@ jobs:
         $(yt-dlp -g https://www.youtube.com/watch?v=NOJf0umMvi4)
         EOL
 
-    - name: Get co_CityTV.m3u8
+    - name: Get ua_ICTV.m3u8
       run: |
-        touch ./co_CityTV.m3u8
-        sudo cat >./co_CityTV.m3u8 <<EOL
+        touch ./ua_ICTV.m3u8
+        sudo cat >./ua_ICTV.m3u8 <<EOL
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=_PZSflOyVw0)
-        EOL
-
-    - name: Get ua_FaktyICTV.m3u8
-      run: |
-        touch ./ua_FaktyICTV.m3u8
-        sudo cat >./ua_FaktyICTV.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=T88RnpKNN_s)
+        $(yt-dlp -g https://www.youtube.com/watch?v=XiBBbMVGUkQ)
         EOL
 
     - name: Get ua_1plus1.m3u8
@@ -300,26 +280,6 @@ jobs:
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
         $(yt-dlp -g https://www.youtube.com/watch?v=6LzcbC02wJI)
-        EOL
-
-    - name: Get ua_ICTV.m3u8
-      run: |
-        touch ./ua_ICTV.m3u8
-        sudo cat >./ua_ICTV.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=XiBBbMVGUkQ)
-        EOL
-
-    - name: Get ua_UKRAINETODAY24.m3u8
-      run: |
-        touch ./ua_UKRAINETODAY24.m3u8
-        sudo cat >./ua_UKRAINETODAY24.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=IUPU2Ygj_OQ)
         EOL
 
     - name: Get ng_ChannelsTelevision1.m3u8
