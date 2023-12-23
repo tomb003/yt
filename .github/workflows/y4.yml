@@ -1,0 +1,430 @@
+name: y4 m3u8
+on:
+  schedule:
+    - cron: "0 */3 * * *"
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Install yt-dlp
+      run: |
+        sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
+        sudo chmod a+rx /usr/local/bin/yt-dlp
+
+    - name: Get fr_FRANCE24English.m3u8
+      run: |
+        touch ./fr_FRANCE24English.m3u8
+        sudo cat >./fr_FRANCE24English.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=tkDUSYHoKxE)
+        EOL
+
+    - name: Get fr_FRANCE24France.m3u8
+      run: |
+        touch ./fr_FRANCE24France.m3u8
+        sudo cat >./fr_FRANCE24France.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=l8PMl7tUDIE)
+        EOL
+
+    - name: Get fr_FRANCE24Espanol.m3u8
+      run: |
+        touch ./fr_FRANCE24Espanol.m3u8
+        sudo cat >./fr_FRANCE24Espanol.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=Y-IlMeCCtIg)
+        EOL
+
+    - name: Get fr_FRANCE24Arabic.m3u8
+      run: |
+        touch ./fr_FRANCE24Arabic.m3u8
+        sudo cat >./fr_FRANCE24Arabic.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=VuYzy8IuT0Y)
+        EOL
+
+    - name: Get fr_EuronewsEnglish.m3u8
+      run: |
+        touch ./fr_EuronewsEnglish.m3u8
+        sudo cat >./fr_EuronewsEnglish.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=pykpO5kQJ98)
+        EOL
+
+    - name: Get fr_EuronewsFrance.m3u8
+      run: |
+        touch ./fr_EuronewsFrance.m3u8
+        sudo cat >./fr_EuronewsFrance.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=NiRIbKwAejk)
+        EOL
+
+    - name: Get fr_EuronewsEspanol.m3u8
+      run: |
+        touch ./fr_EuronewsEspanol.m3u8
+        sudo cat >./fr_EuronewsEspanol.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=O9mOtdZ-nSk)
+        EOL
+
+    - name: Get fr_EuronewsRussian.m3u8
+      run: |
+        touch ./fr_EuronewsRussian.m3u8
+        sudo cat >./fr_EuronewsRussian.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=lwYzwdBiaho)
+        EOL
+
+    - name: Get fr_EuronewsDeutsch.m3u8
+      run: |
+        touch ./fr_EuronewsDeutsch.m3u8
+        sudo cat >./fr_EuronewsDeutsch.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=CQ3KsEbsYHs)
+        EOL
+
+    - name: Get fr_EuronewsItaliano.m3u8
+      run: |
+        touch ./fr_EuronewsItaliano.m3u8
+        sudo cat >./fr_EuronewsItaliano.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=pUcmpyynASM)
+        EOL
+
+    - name: Get fr_EuronewsPortuguesa.m3u8
+      run: |
+        touch ./fr_EuronewsPortuguesa.m3u8
+        sudo cat >./fr_EuronewsPortuguesa.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=fLtn2L7OdeI)
+        EOL
+
+    - name: Get fr_EuronewsGreek.m3u8
+      run: |
+        touch ./fr_EuronewsGreek.m3u8
+        sudo cat >./fr_EuronewsGreek.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=uWIhV9gQClg)
+        EOL
+
+    - name: Get fr_EuronewsRomania.m3u8
+      run: |
+        touch ./fr_EuronewsRomania.m3u8
+        sudo cat >./fr_EuronewsRomania.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=j-klBtg5n0Q)
+        EOL
+
+    - name: Get fr_EuronewsMagyarul.m3u8
+      run: |
+        touch ./fr_EuronewsMagyarul.m3u8
+        sudo cat >./fr_EuronewsMagyarul.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=jAn7L2Kt32U)
+        EOL
+
+    - name: Get fr_AfricanewsEnglish.m3u8
+      run: |
+        touch ./fr_AfricanewsEnglish.m3u8
+        sudo cat >./fr_AfricanewsEnglish.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=NQjabLGdP5g)
+        EOL
+
+    - name: Get fr_AfricanewsFrance.m3u8
+      run: |
+        touch ./fr_AfricanewsFrance.m3u8
+        sudo cat >./fr_AfricanewsFrance.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=b6R9-7KZ8YM)
+        EOL
+
+    - name: Get fr_franceinfo.m3u8
+      run: |
+        touch ./fr_franceinfo.m3u8
+        sudo cat >./fr_franceinfo.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=Z-Nwo-ypKtM)
+        EOL
+
+    - name: Get fr_LeMedia.m3u8
+      run: |
+        touch ./fr_LeMedia.m3u8
+        sudo cat >./fr_LeMedia.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=i_wgRQl9WW8)
+        EOL
+
+    - name: Get de_DWNews.m3u8
+      run: |
+        touch ./de_DWNews.m3u8
+        sudo cat >./de_DWNews.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=pqabxBKzZ6M)
+        EOL
+
+    - name: Get de_DWDeutsch.m3u8
+      run: |
+        touch ./de_DWDeutsch.m3u8
+        sudo cat >./de_DWDeutsch.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=vuI3YM1xh0g)
+        EOL
+
+    - name: Get de_DWNewsEspanol.m3u8
+      run: |
+        touch ./de_DWNewsEspanol.m3u8
+        sudo cat >./de_DWNewsEspanol.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=tsStUN73_6I)
+        EOL
+
+    - name: Get de_DWNewsArabic.m3u8
+      run: |
+        touch ./de_DWNewsArabic.m3u8
+        sudo cat >./de_DWNewsArabic.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=BKXyGQtyECo)
+        EOL
+
+    - name: Get de_earthTV1.m3u8
+      run: |
+        touch ./de_earthTV1.m3u8
+        sudo cat >./de_earthTV1.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=HfgIFGbdGJ0)
+        EOL
+
+    - name: Get de_earthTV2.m3u8
+      run: |
+        touch ./de_earthTV2.m3u8
+        sudo cat >./de_earthTV2.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=buAV1t5-23w)
+        EOL
+
+    - name: Get es_RTVENoticias.m3u8
+      run: |
+        touch ./es_RTVENoticias.m3u8
+        sudo cat >./es_RTVENoticias.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=mzdfGCdNSHQ)
+        EOL
+
+    - name: Get es_Malaga24h.m3u8
+      run: |
+        touch ./es_Malaga24h.m3u8
+        sudo cat >./es_Malaga24h.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=PK3MH6heT00)
+        EOL
+
+    - name: Get es_TelevisionCanaria.m3u8
+      run: |
+        touch ./es_TelevisionCanaria.m3u8
+        sudo cat >./es_TelevisionCanaria.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=6LlZXt8nk4s)
+        EOL
+
+    - name: Get es_canalsur.m3u8
+      run: |
+        touch ./es_canalsur.m3u8
+        sudo cat >./es_canalsur.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=P3FhO1UUGE8)
+        EOL
+
+    - name: Get es_TelevisiondeGalicia.m3u8
+      run: |
+        touch ./es_TelevisiondeGalicia.m3u8
+        sudo cat >./es_TelevisiondeGalicia.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=35oTS5zl2rM)
+        EOL
+
+    - name: Get es_ETBBasque.m3u8
+      run: |
+        touch ./es_ETBBasque.m3u8
+        sudo cat >./es_ETBBasque.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=IpeYUj8KJGQ)
+        EOL
+
+    - name: Get it_Skytg24.m3u8
+      run: |
+        touch ./it_Skytg24.m3u8
+        sudo cat >./it_Skytg24.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=HVB_Wx5T16g)
+        EOL
+
+    - name: Get be_MedyaHaberTV.m3u8
+      run: |
+        touch ./be_MedyaHaberTV.m3u8
+        sudo cat >./be_MedyaHaberTV.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=Qi6qHKk7aoA)
+        EOL
+
+    - name: Get be_SterkTVZindi.m3u8
+      run: |
+        touch ./be_SterkTVZindi.m3u8
+        sudo cat >./be_SterkTVZindi.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=wVyVcIbnNt4)
+        EOL
+
+    - name: Get at_OE24TV.m3u8
+      run: |
+        touch ./at_OE24TV.m3u8
+        sudo cat >./at_OE24TV.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=zinF90PvBhk)
+        EOL
+
+    - name: Get au_ABCIview.m3u8
+      run: |
+        touch ./au_ABCIview.m3u8
+        sudo cat >./au_ABCIview.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=vOTiJkg1voo)
+        EOL
+
+    - name: Get qa_AlJazeera.m3u8
+      run: |
+        touch ./qa_AlJazeera.m3u8
+        sudo cat >./qa_AlJazeera.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=gCNeDWCI0vo)
+        EOL
+
+    - name: Get qa_AlJazeeraMubasher.m3u8
+      run: |
+        touch ./qa_AlJazeeraMubasher.m3u8
+        sudo cat >./qa_AlJazeeraMubasher.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=eksOMqVMINo)
+        EOL
+
+    - name: Get qa_AlJazeeraArabic.m3u8
+      run: |
+        touch ./qa_AlJazeeraArabic.m3u8
+        sudo cat >./qa_AlJazeeraArabic.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=bNyUyrR0PHo)
+        EOL
+
+    - name: Get qa_AlJazeeraBalkans.m3u8
+      run: |
+        touch ./qa_AlJazeeraBalkans.m3u8
+        sudo cat >./qa_AlJazeeraBalkans.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=y8JcLOL4yiQ)
+        EOL
+
+    - name: Get qa_Alaraby.m3u8
+      run: |
+        touch ./qa_Alaraby.m3u8
+        sudo cat >./qa_Alaraby.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=e2RgSa1Wt5o)
+        EOL
+
+    - name: Upload artifact
+      uses: actions/upload-artifact@master
+      with:
+        name: y4 m3u8
+        path: .
+
+    - name: Git push assets to "y4" branch
+      run: |
+        git init
+        git config --local user.name "actions"
+        git config --local user.email "action@github.com"
+        git checkout -b y4
+        git add .
+        git commit -m "Update y4"
+        git remote add origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
+        git push -f -u origin y4
