@@ -12,6 +12,26 @@ jobs:
         sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
         sudo chmod a+rx /usr/local/bin/yt-dlp
 
+    - name: Get in_24NewsMalayalam.m3u8
+      run: |
+        touch ./in_24NewsMalayalam.m3u8
+        sudo cat >./in_24NewsMalayalam.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=V_MXWptocIE)
+        EOL
+
+    - name: Get in_AsianetNews.m3u8
+      run: |
+        touch ./in_AsianetNews.m3u8
+        sudo cat >./in_AsianetNews.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=Ko18SgceYX8)
+        EOL
+
     - name: Get pk_GeoNews.m3u8
       run: |
         touch ./pk_GeoNews.m3u8
@@ -112,36 +132,6 @@ jobs:
         $(yt-dlp -g https://www.youtube.com/watch?v=etdhvCStLzU)
         EOL
 
-    - name: Get pk_24NewsMalayalam.m3u8
-      run: |
-        touch ./pk_24NewsMalayalam.m3u8
-        sudo cat >./pk_24NewsMalayalam.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=V_MXWptocIE)
-        EOL
-
-    - name: Get pk_AsianetNews.m3u8
-      run: |
-        touch ./pk_AsianetNews.m3u8
-        sudo cat >./pk_AsianetNews.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=Ko18SgceYX8)
-        EOL
-
-    - name: Get pk_PTVHomeEntertainment.m3u8
-      run: |
-        touch ./pk_PTVHomeEntertainment.m3u8
-        sudo cat >./pk_PTVHomeEntertainment.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=a4nT8G0Jgfo)
-        EOL
-
     - name: Get pk_GTVNetworkHD.m3u8
       run: |
         touch ./pk_GTVNetworkHD.m3u8
@@ -170,6 +160,16 @@ jobs:
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
         $(yt-dlp -g https://www.youtube.com/watch?v=3-eoZXo21PA)
+        EOL
+
+    - name: Get pk_PTVHomeEntertainment.m3u8
+      run: |
+        touch ./pk_PTVHomeEntertainment.m3u8
+        sudo cat >./pk_PTVHomeEntertainment.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=a4nT8G0Jgfo)
         EOL
 
     - name: Get pk_ExpressNews.m3u8
