@@ -12,6 +12,26 @@ jobs:
         sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
         sudo chmod a+rx /usr/local/bin/yt-dlp
 
+    - name: Get us_CNNTurk.m3u8
+      run: |
+        touch ./us_CNNTurk.m3u8
+        sudo cat >./us_CNNTurk.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=X_EWYemclKA)
+        EOL
+
+    - name: Get us_BloombergHT.m3u8
+      run: |
+        touch ./us_BloombergHT.m3u8
+        sudo cat >./us_BloombergHT.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=hHSmBJk6w0c)
+        EOL
+
     - name: Get tr_TRTWorld.m3u8
       run: |
         touch ./tr_TRTWorld.m3u8
@@ -40,26 +60,6 @@ jobs:
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
         $(yt-dlp -g https://www.youtube.com/watch?v=-Lrxv1_i3qc)
-        EOL
-
-    - name: Get tr_BloombergHT.m3u8
-      run: |
-        touch ./tr_BloombergHT.m3u8
-        sudo cat >./tr_BloombergHT.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=hHSmBJk6w0c)
-        EOL
-
-    - name: Get tr_CNNTurk.m3u8
-      run: |
-        touch ./tr_CNNTurk.m3u8
-        sudo cat >./tr_CNNTurk.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=X_EWYemclKA)
         EOL
 
     - name: Get tr_SozcuTelevizyonu.m3u8
