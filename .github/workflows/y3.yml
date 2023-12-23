@@ -22,6 +22,16 @@ jobs:
         $(yt-dlp -g https://www.youtube.com/watch?v=9NyxcX3rhQs)
         EOL
 
+    - name: Get us_CNBCArabia.m3u8
+      run: |
+        touch ./us_CNBCArabia.m3u8
+        sudo cat >./us_CNBCArabia.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=I-qP4xS7vPg)
+        EOL
+
     - name: Get us_NBC2News.m3u8
       run: |
         touch ./us_NBC2News.m3u8
@@ -102,16 +112,6 @@ jobs:
         $(yt-dlp -g https://www.youtube.com/watch?v=XdEZ9bMM0AI)
         EOL
 
-    - name: Get us_CNBCArabia.m3u8
-      run: |
-        touch ./us_CNBCArabia.m3u8
-        sudo cat >./us_CNBCArabia.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=I-qP4xS7vPg)
-        EOL
-
     - name: Get us_BloombergBusinessNews.m3u8
       run: |
         touch ./us_BloombergBusinessNews.m3u8
@@ -130,26 +130,6 @@ jobs:
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
         $(yt-dlp -g https://www.youtube.com/watch?v=DxmDPrfinXY)
-        EOL
-
-    - name: Get us_BloombergQuicktakeExplained.m3u8
-      run: |
-        touch ./us_BloombergQuicktakeExplained.m3u8
-        sudo cat >./us_BloombergQuicktakeExplained.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=VRZDyw7V26o)
-        EOL
-
-    - name: Get us_NationalGeographic.m3u8
-      run: |
-        touch ./us_NationalGeographic.m3u8
-        sudo cat >./us_NationalGeographic.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=gsA3-3_Cl8s)
         EOL
 
     - name: Get us_NatGeoWILD.m3u8
