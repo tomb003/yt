@@ -262,16 +262,6 @@ jobs:
         $(yt-dlp -g https://www.youtube.com/watch?v=eqFbPey0Ohw)
         EOL
 
-    - name: Get bd_RtvNews.m3u8
-      run: |
-        touch ./bd_RtvNews.m3u8
-        sudo cat >./bd_RtvNews.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=J4IDc1dZMpk)
-        EOL
-
     - name: Get bd_EKHONTV.m3u8
       run: |
         touch ./bd_EKHONTV.m3u8
@@ -320,16 +310,6 @@ jobs:
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
         $(yt-dlp -g https://www.youtube.com/watch?v=BBzdSRt-zSQ)
-        EOL
-
-    - name: Get id_KompasTVMedan.m3u8
-      run: |
-        touch ./id_KompasTVMedan.m3u8
-        sudo cat >./id_KompasTVMedan.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=aIoBJWzthMg)
         EOL
 
     - name: Get id_Liputan6.m3u8
