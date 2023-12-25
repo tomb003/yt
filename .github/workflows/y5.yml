@@ -1,7 +1,7 @@
 name: y5 m3u8
 on:
   schedule:
-    - cron: "0 */3 * * *"
+    - cron: "*/5 * * * *"
   workflow_dispatch:
 jobs:
   build:
@@ -89,7 +89,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=GIT1lX0NdHo)
+        $(yt-dlp -g https://www.youtube.com/c/MediaoneTVLive/live)
         EOL
 
     - name: Get in_RepublicBharat.m3u8
@@ -179,7 +179,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=xhQqoiwKjt0)
+        $(yt-dlp -g https://www.youtube.com/c/Zee24Taas/live)
         EOL
 
     - name: Get in_Zee24Kalak.m3u8
@@ -212,6 +212,16 @@ jobs:
         $(yt-dlp -g https://www.youtube.com/watch?v=8aApFBmEJV0)
         EOL
 
+    - name: Get in_Zee24Ghanta2.m3u8
+      run: |
+        touch ./in_Zee24Ghanta2.m3u8
+        sudo cat >./in_Zee24Ghanta2.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/c/Zee24Ghanta/live)
+        EOL
+
     - name: Get in_ZeeKannadaNews.m3u8
       run: |
         touch ./in_ZeeKannadaNews.m3u8
@@ -219,7 +229,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=-l9UZYUp33o)
+        $(yt-dlp -g https://www.youtube.com/c/ZeeKannadaNews/live)
         EOL
 
     - name: Get in_CNBC_TV18.m3u8
@@ -239,7 +249,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=1_Ih0JYmkjI)
+        $(yt-dlp -g https://www.youtube.com/c/CNBC-TV18/live)
         EOL
 
     - name: Get in_CNBCAwaaz.m3u8
@@ -252,6 +262,16 @@ jobs:
         $(yt-dlp -g https://www.youtube.com/watch?v=TD0A7fHAxKw)
         EOL
 
+    - name: Get in_CNBCAwaaz2.m3u8
+      run: |
+        touch ./in_CNBCAwaaz2.m3u8
+        sudo cat >./in_CNBCAwaaz2.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/c/cnbcawaaz/live)
+        EOL
+
     - name: Get in_CNBCBajar.m3u8
       run: |
         touch ./in_CNBCBajar.m3u8
@@ -259,7 +279,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=LziO-1JrvQo)
+        $(yt-dlp -g https://www.youtube.com/user/cnbcbajar/live)
         EOL
 
     - name: Get in_TV9TeluguNews.m3u8
@@ -269,7 +289,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=II_m28Bm-iM)
+        $(yt-dlp -g https://www.youtube.com/c/TV9TeluguLive/live)
         EOL
 
     - name: Get in_TV9Marathi.m3u8
@@ -280,6 +300,16 @@ jobs:
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
         $(yt-dlp -g https://www.youtube.com/watch?v=04y0H01GTg0)
+        EOL
+
+    - name: Get in_TV9Marathi2.m3u8
+      run: |
+        touch ./in_TV9Marathi2.m3u8
+        sudo cat >./in_TV9Marathi2.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/c/TV9MarathiLive/live)
         EOL
 
     - name: Get in_TV9Bharatvarsh.m3u8
@@ -299,7 +329,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=jdJoOhqCipA)
+        $(yt-dlp -g https://www.youtube.com/c/tv9kannada/live)
         EOL
 
     - name: Get in_TV9Gujarati.m3u8
@@ -369,7 +399,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=HhXKXLVlncY)
+        $(yt-dlp -g https://www.youtube.com/c/SansadTV/live)
         EOL
 
     - name: Get in_SakshiTV.m3u8
@@ -380,36 +410,6 @@ jobs:
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
         $(yt-dlp -g https://www.youtube.com/watch?v=8McTsOqeueE)
-        EOL
-
-    - name: Get in_News18India.m3u8
-      run: |
-        touch ./in_News18India.m3u8
-        sudo cat >./in_News18India.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=HBorWH77wPs)
-        EOL
-
-    - name: Get in_News18MPChhattisgarh.m3u8
-      run: |
-        touch ./in_News18MPChhattisgarh.m3u8
-        sudo cat >./in_News18MPChhattisgarh.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=ivh1DmEWI88)
-        EOL
-
-    - name: Get in_News18Rajasthan.m3u8
-      run: |
-        touch ./in_News18Rajasthan.m3u8
-        sudo cat >./in_News18Rajasthan.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=IbWK8xuVQgs)
         EOL
 
     - name: Upload artifact
