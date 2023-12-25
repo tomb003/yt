@@ -1,7 +1,7 @@
 name: y7 m3u8
 on:
   schedule:
-    - cron: "0 */3 * * *"
+    - cron: "*/5 * * * *"
   workflow_dispatch:
 jobs:
   build:
@@ -12,16 +12,6 @@ jobs:
         sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
         sudo chmod a+rx /usr/local/bin/yt-dlp
 
-    - name: Get in_BIGTVTeluguNews.m3u8
-      run: |
-        touch ./in_BIGTVTeluguNews.m3u8
-        sudo cat >./in_BIGTVTeluguNews.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=ueJsgNKeq8c)
-        EOL
-
     - name: Get in_KalaignarTVNews.m3u8
       run: |
         touch ./in_KalaignarTVNews.m3u8
@@ -29,7 +19,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=XOCUeiExfPE)
+        $(yt-dlp -g https://www.youtube.com/c/KalaignarTVNews/live)
         EOL
 
     - name: Get in_SaamTV.m3u8
@@ -39,7 +29,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=BoEyOfgYYpI)
+        $(yt-dlp -g https://www.youtube.com/c/SaamTV/live)
         EOL
 
     - name: Get in_NewsJ.m3u8
@@ -49,7 +39,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=eBFu7PWZ8l8)
+        $(yt-dlp -g https://www.youtube.com/c/NewsJ/live)
         EOL
 
     - name: Get in_SathiyamNews.m3u8
@@ -59,7 +49,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=Yu3PIdPHqj4)
+        $(yt-dlp -g https://www.youtube.com/c/SathiyamTV/live)
         EOL
 
     - name: Get in_KairaliNews.m3u8
@@ -69,7 +59,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=K-OZ1WUMArA)
+        $(yt-dlp -g https://www.youtube.com/c/KairaliNewsLive/live)
         EOL
 
     - name: Get in_ShekinahNews.m3u8
@@ -79,7 +69,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=q1AW5heNVpU)
+        $(yt-dlp -g https://www.youtube.com/user/globalshekinah/live)
         EOL
 
     - name: Get in_ABPAsmita.m3u8
@@ -109,7 +99,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=8PXzLG06ywo)
+        $(yt-dlp -g https://www.youtube.com/c/swatantrateluguchannel/live)
         EOL
 
     - name: Get in_DDKashir.m3u8
@@ -119,7 +109,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=EPZnG3fQixs)
+        $(yt-dlp -g https://www.youtube.com/c/DDKashirchannel/live)
         EOL
 
     - name: Get in_RTVNewsTelugu.m3u8
@@ -139,7 +129,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=WBMGKDN-AIo)
+        $(yt-dlp -g https://www.youtube.com/c/RtvMusic/live)
         EOL
 
     - name: Get in_PTCNews.m3u8
@@ -149,7 +139,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=DTuhoG7tpTc)
+        $(yt-dlp -g https://www.youtube.com/c/ptcnews/live)
         EOL
 
     - name: Get in_KanakNews.m3u8
@@ -179,7 +169,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=tFAw8jFEXMI)
+        $(yt-dlp -g https://www.youtube.com/c/NEWS9LIVE/live)
         EOL
 
     - name: Get in_HarvestTV.m3u8
@@ -202,6 +192,16 @@ jobs:
         $(yt-dlp -g https://www.youtube.com/watch?v=1uyNNgm56UU)
         EOL
 
+    - name: Get in_NandighoshaTV2.m3u8
+      run: |
+        touch ./in_NandighoshaTV2.m3u8
+        sudo cat >./in_NandighoshaTV2.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/c/NandighoshaTV/live)
+        EOL
+
     - name: Get in_Bharat24.m3u8
       run: |
         touch ./in_Bharat24.m3u8
@@ -222,6 +222,16 @@ jobs:
         $(yt-dlp -g https://www.youtube.com/watch?v=-PI3F_CH9NI)
         EOL
 
+    - name: Get in_JaiMaharashtraNews2.m3u8
+      run: |
+        touch ./in_JaiMaharashtraNews2.m3u8
+        sudo cat >./in_JaiMaharashtraNews2.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/c/JaiMaharashtranews/live)
+        EOL
+
     - name: Get in_KeralaVisionNews.m3u8
       run: |
         touch ./in_KeralaVisionNews.m3u8
@@ -229,7 +239,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=mxF5NdVW3pI)
+        $(yt-dlp -g https://www.youtube.com/@keralavisionnews24x7/live)
         EOL
 
     - name: Get bd_SomoyNews.m3u8
@@ -249,7 +259,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=RlXAbugPQDY)
+        $(yt-dlp -g https://www.youtube.com/c/channel24digital/live)
         EOL
 
     - name: Get bd_ChanneliNews.m3u8
@@ -259,7 +269,17 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=eqFbPey0Ohw)
+        $(yt-dlp -g https://www.youtube.com/c/ChanneliNews/live)
+        EOL
+
+    - name: Get bd_RtvNews.m3u8
+      run: |
+        touch ./bd_RtvNews.m3u8
+        sudo cat >./bd_RtvNews.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/c/RtvNews/live)
         EOL
 
     - name: Get bd_EKHONTV.m3u8
@@ -269,7 +289,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=EyiS7PUrb0E)
+        $(yt-dlp -g https://www.youtube.com/c/ekhontv/live)
         EOL
 
     - name: Get ph_DZRHNews.m3u8
@@ -292,6 +312,26 @@ jobs:
         $(yt-dlp -g https://www.youtube.com/watch?v=nnDNIVquXyk)
         EOL
 
+    - name: Get ph_UNTVNewsandRescue2.m3u8
+      run: |
+        touch ./ph_UNTVNewsandRescue2.m3u8
+        sudo cat >./ph_UNTVNewsandRescue2.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/c/UNTVNewsandRescue/live)
+        EOL
+
+    - name: Get ph_ABSCBNEntertainment.m3u8
+      run: |
+        touch ./ph_ABSCBNEntertainment.m3u8
+        sudo cat >./ph_ABSCBNEntertainment.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/c/abscbnentertainment/live)
+        EOL
+
     - name: Get id_tvOneNews.m3u8
       run: |
         touch ./id_tvOneNews.m3u8
@@ -299,7 +339,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=yNKvkPJl-tg)
+        $(yt-dlp -g https://www.youtube.com/c/tvOneNews/live)
         EOL
 
     - name: Get id_KOMPASTV.m3u8
@@ -309,7 +349,17 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=BBzdSRt-zSQ)
+        $(yt-dlp -g https://www.youtube.com/c/kompastv/live)
+        EOL
+
+    - name: Get id_KompasTVMedan.m3u8
+      run: |
+        touch ./id_KompasTVMedan.m3u8
+        sudo cat >./id_KompasTVMedan.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/c/kompastvmedan/live)
         EOL
 
     - name: Get id_Liputan6.m3u8
@@ -329,7 +379,17 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=XKueVSGTk2o)
+        $(yt-dlp -g https://www.youtube.com/user/metrotvnews/live)
+        EOL
+
+    - name: Get id_Tribunnews.m3u8
+      run: |
+        touch ./id_Tribunnews.m3u8
+        sudo cat >./id_Tribunnews.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/c/tribunnews/live)
         EOL
 
     - name: Get ae_SkyNewsArabia.m3u8
@@ -339,7 +399,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=me1fBxx9wJY)
+        $(yt-dlp -g https://www.youtube.com/c/SkyNewsArabia/live)
         EOL
 
     - name: Get ae_AlMashhad.m3u8
@@ -349,7 +409,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=Jh9HoOjPGjE)
+        $(yt-dlp -g https://www.youtube.com/c/almashhadmedia/live)
         EOL
 
     - name: Upload artifact
