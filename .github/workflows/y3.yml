@@ -362,6 +362,16 @@ jobs:
         $(yt-dlp -g https://www.youtube.com/c/16WAPTNews/live)
         EOL
 
+    - name: Get us_AlHurra.m3u8
+      run: |
+        touch ./us_AlHurra.m3u8
+        sudo cat >./us_AlHurra.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/c/alhurra/live)
+        EOL
+
     - name: Get uk_GBNews.m3u8
       run: |
         touch ./uk_GBNews.m3u8
