@@ -302,16 +302,6 @@ jobs:
         $(yt-dlp -g https://www.youtube.com/c/ulusalkanalTV/live)
         EOL
 
-    - name: Get tr_UlkeTV.m3u8
-      run: |
-        touch ./tr_UlkeTV.m3u8
-        sudo cat >./tr_UlkeTV.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=hRQZ2oJ-eSY)
-        EOL
-
     - name: Get tr_VavTV.m3u8
       run: |
         touch ./tr_VavTV.m3u8
@@ -400,6 +390,26 @@ jobs:
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
         $(yt-dlp -g https://www.youtube.com/c/canal26/live)
+        EOL
+
+    - name: Get ae_SkyNewsArabia.m3u8
+      run: |
+        touch ./ae_SkyNewsArabia.m3u8
+        sudo cat >./ae_SkyNewsArabia.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/c/SkyNewsArabia/live)
+        EOL
+
+    - name: Get ae_AlMashhad.m3u8
+      run: |
+        touch ./ae_AlMashhad.m3u8
+        sudo cat >./ae_AlMashhad.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/c/almashhadmedia/live)
         EOL
 
     - name: Upload artifact
