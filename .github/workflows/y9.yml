@@ -282,16 +282,6 @@ jobs:
         $(yt-dlp -g https://www.youtube.com/c/a2turkiye/live)
         EOL
 
-    - name: Get tr_TAYTV.m3u8
-      run: |
-        touch ./tr_TAYTV.m3u8
-        sudo cat >./tr_TAYTV.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=BWdSUAyIIO8)
-        EOL
-
     - name: Get tr_UlusalKanal.m3u8
       run: |
         touch ./tr_UlusalKanal.m3u8
