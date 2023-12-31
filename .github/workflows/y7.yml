@@ -242,16 +242,6 @@ jobs:
         $(yt-dlp -g https://www.youtube.com/@keralavisionnews24x7/live)
         EOL
 
-    - name: Get bd_SomoyNews.m3u8
-      run: |
-        touch ./bd_SomoyNews.m3u8
-        sudo cat >./bd_SomoyNews.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=dmGprO-4k5I)
-        EOL
-
     - name: Get bd_Channel24.m3u8
       run: |
         touch ./bd_Channel24.m3u8
@@ -300,6 +290,16 @@ jobs:
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
         $(yt-dlp -g https://www.youtube.com/c/EkattorTelevision/live)
+        EOL
+
+    - name: Get bd_IndependentTelevision.m3u8
+      run: |
+        touch ./bd_IndependentTelevision.m3u8
+        sudo cat >./bd_IndependentTelevision.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/c/IndependentTelevision/live)
         EOL
 
     - name: Get ph_DZRHNews.m3u8
