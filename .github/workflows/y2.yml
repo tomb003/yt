@@ -32,16 +32,6 @@ jobs:
         $(yt-dlp -g https://www.youtube.com/c/NHKWORLDJAPAN/live)
         EOL
 
-    - name: Get jp_SunTVNews.m3u8
-      run: |
-        touch ./jp_SunTVNews.m3u8
-        sudo cat >./jp_SunTVNews.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=xROJWry9lOA)
-        EOL
-
     - name: Get jp_ABC6ch.m3u8
       run: |
         touch ./jp_ABC6ch.m3u8
@@ -89,7 +79,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=q-Wv4Pvt-5A)
+        $(yt-dlp -g https://www.youtube.com/user/MBCNEWS/live)
         EOL
 
     - name: Get kr_YTNScience.m3u8
@@ -220,16 +210,6 @@ jobs:
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
         $(yt-dlp -g https://www.youtube.com/c/tele13/live)
-        EOL
-
-    - name: Get cl_TVNChile.m3u8
-      run: |
-        touch ./cl_TVNChile.m3u8
-        sudo cat >./cl_TVNChile.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=cr4iA26ViNg)
         EOL
 
     - name: Get br_TVSerraDouradaSBT.m3u8
