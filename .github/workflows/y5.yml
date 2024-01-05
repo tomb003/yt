@@ -49,7 +49,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=xuei80DCu3Q)
+        $(yt-dlp -g https://www.youtube.com/@NDTVMPCG/live)
         EOL
 
     - name: Get in_AajTak.m3u8
@@ -99,7 +99,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=qfrocHBy6RQ)
+        $(yt-dlp -g https://www.youtube.com/RepublicTVBharat/live)
         EOL
 
     - name: Get in_RepublicKannada.m3u8
@@ -109,7 +109,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=WUSirGxWh-U)
+        $(yt-dlp -g https://www.youtube.com/@KannadaRepublic/live)
         EOL
 
     - name: Get in_RepublicBangla.m3u8
@@ -149,7 +149,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=L0RktSIM980)
+        $(yt-dlp -g https://www.youtube.com/@ntvtelugu/live)
         EOL
 
     - name: Get in_BhakthiTV.m3u8
@@ -159,7 +159,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=d0dB3kSCMmM)
+        $(yt-dlp -g https://www.youtube.com/@bhakthitv/live)
         EOL
 
     - name: Get in_ZeeNews.m3u8
@@ -209,17 +209,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=8aApFBmEJV0)
-        EOL
-
-    - name: Get in_Zee24Ghanta2.m3u8
-      run: |
-        touch ./in_Zee24Ghanta2.m3u8
-        sudo cat >./in_Zee24Ghanta2.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/Zee24Ghanta/live)
+        $(yt-dlp -g https://www.youtube.com/@Zee24Ghanta/live)
         EOL
 
     - name: Get in_ZeeKannadaNews.m3u8
@@ -259,7 +249,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=TD0A7fHAxKw)
+        $(yt-dlp -g https://www.youtube.com/@cnbcawaaz/live)
         EOL
 
     - name: Get in_CNBCAwaaz2.m3u8
@@ -339,7 +329,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=o6mLtt_k3lw)
+        $(yt-dlp -g https://www.youtube.com/tv9gujaratinews/live)
         EOL
 
     - name: Get in_TV9Bangla.m3u8
@@ -369,7 +359,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=iMvG7GbqOu4)
+        $(yt-dlp -g https://www.youtube.com/@ABPGanga/live)
         EOL
 
     - name: Get in_ABPAnanda.m3u8
@@ -379,7 +369,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=PKwLsAu-z10)
+        $(yt-dlp -g https://www.youtube.com/@abpanandatv/live)
         EOL
 
     - name: Get in_ABPMajha.m3u8
