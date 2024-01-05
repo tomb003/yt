@@ -59,7 +59,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=IfNMuFqKBWs)
+        $(yt-dlp -g https://www.youtube.com/@2olive153/live)
         EOL
 
     - name: Get hk_FengHuangZiXun.m3u8
@@ -69,7 +69,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=Zm4i_rvAcxc)
+        $(yt-dlp -g https://www.youtube.com/@phoenixtvhk/live)
         EOL
 
     - name: Get ww_ZhongTianXinWen.m3u8
@@ -79,7 +79,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=oIgbl7t0S_w)
+        $(yt-dlp -g https://www.youtube.com/@CtiTv/live)
         EOL
 
     - name: Get ww_ZhongTianXinWen2.m3u8
@@ -89,7 +89,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=WPfPjbOLNfE)
+        $(yt-dlp -g https://www.youtube.com/@CtiDeepThroat/live)
         EOL
 
     - name: Get ww_TVBSNews.m3u8
@@ -109,7 +109,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=xL0ch83RAK8)
+        $(yt-dlp -g https://www.youtube.com/@TTV_NEWS/live)
         EOL
 
     - name: Get ww_ZhongShiXinWen.m3u8
@@ -169,7 +169,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=ylYJSBUgaMA)
+        $(yt-dlp -g https://www.youtube.com/@FTV_News/live)
         EOL
 
     - name: Get ww_SanLiiNEWS.m3u8
@@ -189,7 +189,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=oZdzzvxTfUY)
+        $(yt-dlp -g https://www.youtube.com/@setnews/live)
         EOL
 
     - name: Get ww_HuanYuXinWenWW.m3u8
@@ -199,7 +199,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=w87VGpgd90U)
+        $(yt-dlp -g https://www.youtube.com/@globalnewstw/live)
         EOL
 
     - name: Get ww_HuanYuXinWenQuanQiu.m3u8
@@ -229,7 +229,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=25SE1bbTv9k)
+        $(yt-dlp -g https://www.youtube.com/@globlemoney/live)
         EOL
 
     - name: Get ww_JingXinWen.m3u8
@@ -239,7 +239,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=5n0y6b0Q25o)
+        $(yt-dlp -g https://www.youtube.com/@mnews-tw/live)
         EOL
 
     - name: Get ww_ZhangHuaShengHuo.m3u8
@@ -249,7 +249,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=V2RdYQsVXzA)
+        $(yt-dlp -g https://www.youtube.com/@user-ss9pr1ig8x/live)
         EOL
 
     - name: Get ww_YOYOTV.m3u8
@@ -299,7 +299,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=dZp87qnWelE)
+        $(yt-dlp -g https://www.youtube.com/@TaiwanPlusLive/live)
         EOL
 
     - name: Get ww_XinDaTV.m3u8
@@ -309,7 +309,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=A2mE-s1DuFU)
+        $(yt-dlp -g https://www.youtube.com/@user-mj5bl5ze5o/live)
         EOL
 
     - name: Get ww_HaiTunZongHe.m3u8
@@ -379,7 +379,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=UNbMsJnWdDY)
+        $(yt-dlp -g https://www.youtube.com/@stv9721/live)
         EOL
 
     - name: Get jp_KTSKagoshimaNews.m3u8
@@ -389,7 +389,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=PCccV7cCW8M)
+        $(yt-dlp -g https://www.youtube.com/@KagoshimaNewsKTS/live)
         EOL
 
     - name: Upload artifact
