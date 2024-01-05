@@ -59,7 +59,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=Jc_MexRxmDM)
+        $(yt-dlp -g https://www.youtube.com/@hbc7142/live)
         EOL
 
     - name: Get kr_Arirang.m3u8
@@ -109,7 +109,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=s9xL1DpBsfQ)
+        $(yt-dlp -g https://www.youtube.com/@MKeconomy_TV/live)
         EOL
 
     - name: Get kr_WOWTV.m3u8
@@ -129,7 +129,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=b5UeAVqz4cI)
+        $(yt-dlp -g https://www.youtube.com/@sapiens_studio/live)
         EOL
 
     - name: Get kr_MTNMoney.m3u8
@@ -189,7 +189,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=1TIWOfxX1rk)
+        $(yt-dlp -g https://www.youtube.com/@LiveMoscow24/live)
         EOL
 
     - name: Get cl_24HorasTVNChile.m3u8
@@ -199,7 +199,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=1NJkxVQsSIo)
+        $(yt-dlp -g https://www.youtube.com/@24Horas_TVNChile/live)
         EOL
 
     - name: Get cl_tele13.m3u8
@@ -269,7 +269,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=hns12gYNRq0)
+        $(yt-dlp -g https://www.youtube.com/@news24onlineua/live)
         EOL
 
     - name: Get ua_pryamiy.m3u8
