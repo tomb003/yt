@@ -152,16 +152,6 @@ jobs:
         $(yt-dlp -g https://www.youtube.com/watch?v=njXehzQ1gEQ)
         EOL
 
-    - name: Get in_CalcuttaNews.m3u8
-      run: |
-        touch ./in_CalcuttaNews.m3u8
-        sudo cat >./in_CalcuttaNews.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=Ik89cyzS_PU)
-        EOL
-
     - name: Get in_NEWS9.m3u8
       run: |
         touch ./in_NEWS9.m3u8
@@ -209,23 +199,13 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=wdWUX5zrg78)
+        $(yt-dlp -g https://www.youtube.com/c/Bharat24Liv/live)
         EOL
 
     - name: Get in_JaiMaharashtraNews.m3u8
       run: |
         touch ./in_JaiMaharashtraNews.m3u8
         sudo cat >./in_JaiMaharashtraNews.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=-PI3F_CH9NI)
-        EOL
-
-    - name: Get in_JaiMaharashtraNews2.m3u8
-      run: |
-        touch ./in_JaiMaharashtraNews2.m3u8
-        sudo cat >./in_JaiMaharashtraNews2.m3u8 <<EOL
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
