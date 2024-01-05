@@ -99,7 +99,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=DRrIqa0C1z0)
+        $(yt-dlp -g https://www.youtube.com/@City21/live)
         EOL
 
     - name: Get pk_City42News.m3u8
@@ -119,17 +119,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=LrgH83Fxo58)
-        EOL
-
-    - name: Get pk_BOLNews2.m3u8
-      run: |
-        touch ./pk_BOLNews2.m3u8
-        sudo cat >./pk_BOLNews2.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/BOLNewsofficial/live)
+        $(yt-dlp -g https://www.youtube.com/@BOLNewsofficial/live)
         EOL
 
     - name: Get pk_ARYQtv.m3u8
@@ -209,7 +199,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=z3gT8L18mgM)
+        $(yt-dlp -g https://www.youtube.com/@ExpressNewspkofficial/live)
         EOL
 
     - name: Get pk_GNNNews.m3u8
@@ -319,7 +309,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=EMcvfLUKo6U)
+        $(yt-dlp -g https://www.youtube.com/alkaherawalnas/live)
         EOL
 
     - name: Get eg_AlghadExtra.m3u8
@@ -349,7 +339,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=TuxJwMEIhlU)
+        $(yt-dlp -g https://www.youtube.com/@jintvzindi/live)
         EOL
 
     - name: Get ke_CitizenTV.m3u8
