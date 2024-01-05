@@ -89,7 +89,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=PCUv-Uip7QU)
+        $(yt-dlp -g https://www.youtube.com/@otvodisha/live)
         EOL
 
     - name: Get in_SwatantraTV.m3u8
@@ -149,7 +149,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=njXehzQ1gEQ)
+        $(yt-dlp -g https://www.youtube.com/@KanakNewsOdisha/live)
         EOL
 
     - name: Get in_NEWS9.m3u8
@@ -169,7 +169,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=bCeZIGlDk4I)
+        $(yt-dlp -g https://www.youtube.com/@harvesttv7644/live)
         EOL
 
     - name: Get in_NandighoshaTV.m3u8
@@ -179,7 +179,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=1uyNNgm56UU)
+        $(yt-dlp -g https://www.youtube.com/NandighoshaTV/live)
         EOL
 
     - name: Get in_NandighoshaTV2.m3u8
@@ -289,7 +289,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=rlOW_ZFwK68)
+        $(yt-dlp -g https://www.youtube.com/@DZRHTV/live)
         EOL
 
     - name: Get ph_UNTVNewsandRescue.m3u8
@@ -299,17 +299,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=nnDNIVquXyk)
-        EOL
-
-    - name: Get ph_UNTVNewsandRescue2.m3u8
-      run: |
-        touch ./ph_UNTVNewsandRescue2.m3u8
-        sudo cat >./ph_UNTVNewsandRescue2.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/UNTVNewsandRescue/live)
+        $(yt-dlp -g https://www.youtube.com/@UNTVNewsandRescue/live)
         EOL
 
     - name: Get ph_ABSCBNEntertainment.m3u8
@@ -359,7 +349,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=AKQmj8YHZ9c)
+        $(yt-dlp -g https://www.youtube.com/@liputan6_news/live)
         EOL
 
     - name: Get id_METROTV.m3u8
