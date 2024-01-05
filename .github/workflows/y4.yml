@@ -139,7 +139,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=jAn7L2Kt32U)
+        $(yt-dlp -g https://www.youtube.com/@euronewshu/live)
         EOL
 
     - name: Get fr_EuronewsAlbania.m3u8
@@ -309,7 +309,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=HVB_Wx5T16g)
+        $(yt-dlp -g https://www.youtube.com/@skytg24/live)
         EOL
 
     - name: Get be_MedyaHaberTV.m3u8
