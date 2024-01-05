@@ -29,7 +29,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=YvdcZ_jpLXE)
+        $(yt-dlp -g https://www.youtube.com/@TVBSNEWS02/live)
         EOL
 
     - name: Get ww_HuaShiXinWenZiXun.m3u8
@@ -39,17 +39,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=wM0g8EoUZ_E)
-        EOL
-
-    - name: Get ww_HuaShiXinWenZiXun2.m3u8
-      run: |
-        touch ./ww_HuaShiXinWenZiXun2.m3u8
-        sudo cat >./ww_HuaShiXinWenZiXun2.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/CtsTw/live)
+        $(yt-dlp -g https://www.youtube.com/@CtsTw/live)
         EOL
 
     - name: Get ww_DongSenLive.m3u8
@@ -79,7 +69,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=FJfwehhzIhw)
+        $(yt-dlp -g https://www.youtube.com/@ytnnews24/live)
         EOL
 
     - name: Get kr_YTNdmb.m3u8
@@ -199,7 +189,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=_PZSflOyVw0)
+        $(yt-dlp -g https://www.youtube.com/@Canalcitytv/live)
         EOL
 
     - name: Upload artifact
