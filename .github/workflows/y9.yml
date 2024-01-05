@@ -79,7 +79,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=2i8lfP9oqvk)
+        $(yt-dlp -g https://www.youtube.com/@Sozcutelevizyonu/live)
         EOL
 
     - name: Get tr_HalkTV.m3u8
@@ -169,7 +169,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=82O6yOy_XwE)
+        $(yt-dlp -g https://www.youtube.com/@StarTVResmi/live)
         EOL
 
     - name: Get tr_ASpor.m3u8
@@ -289,7 +289,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=xNNrCVKsn4Q)
+        $(yt-dlp -g https://www.youtube.com/@vavtv/live)
         EOL
 
     - name: Get ar_TodoNoticias.m3u8
@@ -319,7 +319,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=Vh8xmLBJtR8)
+        $(yt-dlp -g https://www.youtube.com/@elsietemendoza/live)
         EOL
 
     - name: Get ar_C5N.m3u8
