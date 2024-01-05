@@ -169,7 +169,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=2ywxK3HC4iA)
+        $(yt-dlp -g https://www.youtube.com/@Sunnewstamil/live)
         EOL
 
     - name: Get in_V6NewsTelugu.m3u8
@@ -179,7 +179,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=_xtceKvlVYQ)
+        $(yt-dlp -g https://www.youtube.com/V6NewsTelugu/live)
         EOL
 
     - name: Get in_TV5TeluguNews.m3u8
@@ -229,7 +229,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=GI-8sFxRoyw)
+        $(yt-dlp -g https://www.youtube.com/@ETVAndhraPradesh/live)
         EOL
 
     - name: Get in_DDNews.m3u8
@@ -289,7 +289,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=DNnfrmjcHHo)
+        $(yt-dlp -g https://www.youtube.com/@PolimerNews/live)
         EOL
 
     - name: Get in_PuthiyaThalaimuraiTV.m3u8
@@ -309,7 +309,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=FeweQREkl44)
+        $(yt-dlp -g https://www.youtube.com/@thanthitv/live)
         EOL
 
     - name: Get in_MathrubhumiNews.m3u8
@@ -339,7 +339,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=mCqZrEY5_jI)
+        $(yt-dlp -g https://www.youtube.com/@tvjanam/live)
         EOL
 
     - name: Get in_RajasthanPatrika.m3u8
@@ -369,7 +369,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=Li1ZA566CIo)
+        $(yt-dlp -g https://www.youtube.com/@hmtvnewslive/live)
         EOL
 
     - name: Get in_10TVNewsTelugu.m3u8
