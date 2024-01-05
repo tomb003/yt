@@ -89,7 +89,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=eXZ4-qp16nI)
+        $(yt-dlp -g https://www.youtube.com/@abc7swfl798/live)
         EOL
 
     - name: Get us_ABC7EyewitnessNews.m3u8
@@ -129,7 +129,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=iyOq8DhaMYw)
+        $(yt-dlp -g https://www.youtube.com/@markets/live)
         EOL
 
     - name: Get us_BloombergOriginals.m3u8
@@ -139,7 +139,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=DxmDPrfinXY)
+        $(yt-dlp -g https://www.youtube.com/@BloombergQuicktake/live)
         EOL
 
     - name: Get us_NatGeoWILD.m3u8
@@ -149,17 +149,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=BJ3Yv572V1A)
-        EOL
-
-    - name: Get us_NatGeoWILD2.m3u8
-      run: |
-        touch ./us_NatGeoWILD2.m3u8
-        sudo cat >./us_NatGeoWILD2.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/user/NatGeoWild/live)
+        $(yt-dlp -g https://www.youtube.com/@NatGeoWild/live)
         EOL
 
     - name: Get us_SonLifeBroadcastingNetwork.m3u8
@@ -189,7 +179,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=BWhVz1ozr1o)
+        $(yt-dlp -g https://www.youtube.com/@SchwabNetwork/live)
         EOL
 
     - name: Get us_WCVBChannel5Boston.m3u8
@@ -389,7 +379,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=WguRyzIb4bE)
+        $(yt-dlp -g https://www.youtube.com/talktv/live)
         EOL
 
     - name: Upload artifact
