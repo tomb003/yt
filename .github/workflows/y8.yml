@@ -259,7 +259,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=MYIqDdUwlsg)
+        $(yt-dlp -g https://www.youtube.com/@AsharqBusiness/live)
         EOL
 
     - name: Get sa_Alekhbariya.m3u8
