@@ -29,6 +29,16 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/watch?v=YvdcZ_jpLXE)
+        EOL
+
+    - name: Get ww_TVBSXuanXinWen2.m3u8
+      run: |
+        touch ./ww_TVBSXuanXinWen2.m3u8
+        sudo cat >./ww_TVBSXuanXinWen2.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
         $(yt-dlp -g https://www.youtube.com/@TVBSNEWS02/live)
         EOL
 
