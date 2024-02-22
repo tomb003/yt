@@ -52,16 +52,6 @@ jobs:
         $(yt-dlp -g https://www.youtube.com/c/CGTNArabic/live)
         EOL
 
-    - name: Get cn_ChinesePOPMusic.m3u8
-      run: |
-        touch ./cn_ChinesePOPMusic.m3u8
-        sudo cat >./cn_ChinesePOPMusic.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/@2olive153/live)
-        EOL
-
     - name: Get hk_FengHuangZiXun.m3u8
       run: |
         touch ./hk_FengHuangZiXun.m3u8
