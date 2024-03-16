@@ -169,7 +169,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=wvpYu7Qp4DQ)
+        $(yt-dlp -g https://www.youtube.com/watch?v=kebMQM3bDxY)
         EOL
 
     - name: Get my_BeritaRTM.m3u8
