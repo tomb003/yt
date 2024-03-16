@@ -212,16 +212,6 @@ jobs:
         $(yt-dlp -g https://www.youtube.com/c/tele13/live)
         EOL
 
-    - name: Get br_TVSerraDouradaSBT.m3u8
-      run: |
-        touch ./br_TVSerraDouradaSBT.m3u8
-        sudo cat >./br_TVSerraDouradaSBT.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/TVSerraDouradaOficial/live)
-        EOL
-
     - name: Get cr_MultimediosCostaRica.m3u8
       run: |
         touch ./cr_MultimediosCostaRica.m3u8
