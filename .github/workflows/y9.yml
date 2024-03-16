@@ -112,16 +112,6 @@ jobs:
         $(yt-dlp -g https://www.youtube.com/c/NTV/live)
         EOL
 
-    - name: Get tr_atv.m3u8
-      run: |
-        touch ./tr_atv.m3u8
-        sudo cat >./tr_atv.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/atvturkiye/live)
-        EOL
-
     - name: Get tr_ShowTV.m3u8
       run: |
         touch ./tr_ShowTV.m3u8
