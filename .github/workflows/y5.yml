@@ -69,7 +69,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=kL9KzF-1kvI)
+        $(yt-dlp -g https://www.youtube.com/TimesNow/live)
         EOL
 
     - name: Get in_TimesNowNavbharat.m3u8
