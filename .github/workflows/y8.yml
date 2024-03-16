@@ -282,16 +282,6 @@ jobs:
         $(yt-dlp -g https://www.youtube.com/c/BelqeesTV/live)
         EOL
 
-    - name: Get lb_AlMayadeen.m3u8
-      run: |
-        touch ./lb_AlMayadeen.m3u8
-        sudo cat >./lb_AlMayadeen.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/AlMayadeenLive1/live)
-        EOL
-
     - name: Get eg_alkaherawalnas.m3u8
       run: |
         touch ./eg_alkaherawalnas.m3u8
