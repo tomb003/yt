@@ -29,7 +29,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/24OnLive/live)
+        $(yt-dlp -g https://www.youtube.com/@24OnLive/live)
         EOL
 
     - name: Get in_AsianetNews.m3u8
@@ -39,17 +39,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/asianetnews/live)
-        EOL
-
-    - name: Get in_ZoomOnNews.m3u8
-      run: |
-        touch ./in_ZoomOnNews.m3u8
-        sudo cat >./in_ZoomOnNews.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/zoomonnews/live)
+        $(yt-dlp -g https://www.youtube.com/@asianetnews/live)
         EOL
 
     - name: Get pk_GeoNews.m3u8
@@ -59,7 +49,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/geonews/live)
+        $(yt-dlp -g https://www.youtube.com/@geonews/live)
         EOL
 
     - name: Get pk_HUMNews.m3u8
@@ -69,7 +59,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/HUMNewsPakistan/live)
+        $(yt-dlp -g https://www.youtube.com/@HUMNewsPakistan/live)
         EOL
 
     - name: Get pk_24NewsHD.m3u8
@@ -79,7 +69,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/24NewsHD/live)
+        $(yt-dlp -g https://www.youtube.com/@24NewsHD/live)
         EOL
 
     - name: Get pk_SAMAANews.m3u8
@@ -89,7 +79,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/samaatvnews/live)
+        $(yt-dlp -g https://www.youtube.com/samaatvnews/live)
         EOL
 
     - name: Get pk_City21News.m3u8
@@ -109,7 +99,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/City42Lahore/live)
+        $(yt-dlp -g https://www.youtube.com/@City42Lahore/live)
         EOL
 
     - name: Get pk_BOLNews.m3u8
@@ -129,7 +119,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/ARYQtvofficial/live)
+        $(yt-dlp -g https://www.youtube.com/@ARYQtvofficial/live)
         EOL
 
     - name: Get pk_AajNews.m3u8
@@ -139,7 +129,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/AajTVofficial/live)
+        $(yt-dlp -g https://www.youtube.com/@AajTVofficial/live)
         EOL
 
     - name: Get pk_DawnNews.m3u8
@@ -149,7 +139,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/user/dawnnewspakistan/live)
+        $(yt-dlp -g https://www.youtube.com/@dawnnewspakistan/live)
         EOL
 
     - name: Get pk_GTVNetworkHD.m3u8
@@ -159,7 +149,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/GTVNetworkHD/live)
+        $(yt-dlp -g https://www.youtube.com/gtvnetworkhd/live)
         EOL
 
     - name: Get pk_PTVNews.m3u8
@@ -169,7 +159,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/PTVNewsOfficial/live)
+        $(yt-dlp -g https://www.youtube.com/@PTVNewsOfficial/live)
         EOL
 
     - name: Get pk_PTVWorld.m3u8
@@ -179,7 +169,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/PTVWorldOfficial/live)
+        $(yt-dlp -g https://www.youtube.com/@PTVWorldOfficial/live)
         EOL
 
     - name: Get pk_PTVHomeEntertainment.m3u8
@@ -189,7 +179,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/PTVHomeEntertainment/live)
+        $(yt-dlp -g https://www.youtube.com/@PTVHomeEntertainment/live)
         EOL
 
     - name: Get pk_ExpressNews.m3u8
@@ -209,7 +199,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/gnnhdofficial/live)
+        $(yt-dlp -g https://www.youtube.com/@gnnhdofficial/live)
         EOL
 
     - name: Get np_News24Nepal.m3u8
@@ -219,7 +209,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/news24tvchannel/live)
+        $(yt-dlp -g https://www.youtube.com/@news24tvchannel/live)
         EOL
 
     - name: Get sa_AlArabiya.m3u8
@@ -229,7 +219,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/AlArabiya/live)
+        $(yt-dlp -g https://www.youtube.com/AlArabiya/live)
         EOL
 
     - name: Get sa_AlHadath.m3u8
@@ -239,7 +229,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/AlHadath/live)
+        $(yt-dlp -g https://www.youtube.com/@AlHadath/live)
         EOL
 
     - name: Get sa_AsharqNews.m3u8
@@ -249,7 +239,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/AsharqNews/live)
+        $(yt-dlp -g https://www.youtube.com/@AsharqNews/live)
         EOL
 
     - name: Get sa_AsharqBusiness.m3u8
@@ -269,7 +259,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/SaudiNewsTV/live)
+        $(yt-dlp -g https://www.youtube.com/@SaudiNewsTV/live)
         EOL
 
     - name: Get ye_BelqeesTV.m3u8
@@ -279,7 +269,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/BelqeesTV/live)
+        $(yt-dlp -g https://www.youtube.com/@BelqeesTV/live)
         EOL
 
     - name: Get eg_alkaherawalnas.m3u8
@@ -309,7 +299,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/AlghadExtra/live)
+        $(yt-dlp -g https://www.youtube.com/@AlghadExtra/live)
         EOL
 
     - name: Get iq_KarbalaTV.m3u8
@@ -319,7 +309,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/KarbalatvGroup/live)
+        $(yt-dlp -g https://www.youtube.com/@KarbalatvGroup/live)
         EOL
 
     - name: Get iq_JinTVZindi.m3u8
@@ -339,7 +329,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/kenyacitizentv/live)
+        $(yt-dlp -g https://www.youtube.com/Kenyacitizentv/live)
         EOL
 
     - name: Get ke_KTNNewsKenya.m3u8
@@ -359,7 +349,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/ADN40MX/live)
+        $(yt-dlp -g https://www.youtube.com/@ADN40MX/live)
         EOL
 
     - name: Get mx_TelevisaPuebla.m3u8
@@ -369,7 +359,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/user/televisapuebla/live)
+        $(yt-dlp -g https://www.youtube.com/@televisapuebla/live)
         EOL
 
     - name: Upload artifact
