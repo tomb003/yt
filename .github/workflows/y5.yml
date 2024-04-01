@@ -29,7 +29,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=MN8p-Vrn6G0)
+        $(yt-dlp -g https://www.youtube.com/ndtvindia/live)
         EOL
 
     - name: Get in_NDTV24x7.m3u8
@@ -39,7 +39,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=nCAdAkKtsts)
+        $(yt-dlp -g https://www.youtube.com/@NDTV/live)
         EOL
 
     - name: Get in_NDTVMPChhattisgarh.m3u8
@@ -79,7 +79,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=7Ci60hrztpM)
+        $(yt-dlp -g https://www.youtube.com/@timesnownavbharat/live)
         EOL
 
     - name: Get in_MediaOneMalayalamNews.m3u8
@@ -89,7 +89,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/MediaoneTVLive/live)
+        $(yt-dlp -g https://www.youtube.com/@MediaoneTVLive/live)
         EOL
 
     - name: Get in_RepublicBharat.m3u8
@@ -119,7 +119,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=pivpyRNKZvo)
+        $(yt-dlp -g https://www.youtube.com/@republicbangla/live)
         EOL
 
     - name: Get in_WIONNews.m3u8
@@ -149,7 +149,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/@ntvtelugu/live)
+        $(yt-dlp -g https://www.youtube.com/watch?v=L0RktSIM980)
         EOL
 
     - name: Get in_BhakthiTV.m3u8
@@ -169,7 +169,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=TPcmrPrygDc)
+        $(yt-dlp -g https://www.youtube.com/@zeenews/live)
         EOL
 
     - name: Get in_Zee24Taas.m3u8
@@ -179,7 +179,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/Zee24Taas/live)
+        $(yt-dlp -g https://www.youtube.com/@Zee24Taas/live)
         EOL
 
     - name: Get in_Zee24Kalak.m3u8
@@ -199,7 +199,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=ffI9-IioJK8)
+        $(yt-dlp -g https://www.youtube.com/@ZeeTeluguNews/live)
         EOL
 
     - name: Get in_Zee24Ghanta.m3u8
@@ -219,7 +219,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/ZeeKannadaNews/live)
+        $(yt-dlp -g https://www.youtube.com/zeekannadanews/live)
         EOL
 
     - name: Get in_CNBC_TV18.m3u8
@@ -239,7 +239,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/CNBC-TV18/live)
+        $(yt-dlp -g https://www.youtube.com/@CNBC-TV18/live)
         EOL
 
     - name: Get in_CNBCAwaaz.m3u8
@@ -252,16 +252,6 @@ jobs:
         $(yt-dlp -g https://www.youtube.com/@cnbcawaaz/live)
         EOL
 
-    - name: Get in_CNBCAwaaz2.m3u8
-      run: |
-        touch ./in_CNBCAwaaz2.m3u8
-        sudo cat >./in_CNBCAwaaz2.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/cnbcawaaz/live)
-        EOL
-
     - name: Get in_CNBCBajar.m3u8
       run: |
         touch ./in_CNBCBajar.m3u8
@@ -269,7 +259,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/user/cnbcbajar/live)
+        $(yt-dlp -g https://www.youtube.com/@cnbcbajar/live)
         EOL
 
     - name: Get in_TV9TeluguNews.m3u8
@@ -279,7 +269,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/TV9TeluguLive/live)
+        $(yt-dlp -g https://www.youtube.com/TV9TeluguLive/live)
         EOL
 
     - name: Get in_TV9Marathi.m3u8
@@ -289,17 +279,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=04y0H01GTg0)
-        EOL
-
-    - name: Get in_TV9Marathi2.m3u8
-      run: |
-        touch ./in_TV9Marathi2.m3u8
-        sudo cat >./in_TV9Marathi2.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/TV9MarathiLive/live)
+        $(yt-dlp -g https://www.youtube.com/@TV9MarathiLive/live)
         EOL
 
     - name: Get in_TV9Bharatvarsh.m3u8
@@ -319,7 +299,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/tv9kannada/live)
+        $(yt-dlp -g https://www.youtube.com/@tv9kannada/live)
         EOL
 
     - name: Get in_TV9Gujarati.m3u8
@@ -339,7 +319,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=0Bl1ur0D980)
+        $(yt-dlp -g https://www.youtube.com/@TV9BanglaLive/live)
         EOL
 
     - name: Get in_ABP_NEWS.m3u8
@@ -349,7 +329,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=nyd-xznCpJc)
+        $(yt-dlp -g https://www.youtube.com/@ABPNEWS/live)
         EOL
 
     - name: Get in_ABPGanga.m3u8
@@ -379,7 +359,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=m0MD6Ukm0cQ)
+        $(yt-dlp -g https://www.youtube.com/@abpmajhatv/live)
         EOL
 
     - name: Get in_SansadTV.m3u8
@@ -389,7 +369,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/SansadTV/live)
+        $(yt-dlp -g https://www.youtube.com/rajyasabhatv/live)
         EOL
 
     - name: Get in_SakshiTV.m3u8
@@ -399,7 +379,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=8McTsOqeueE)
+        $(yt-dlp -g https://www.youtube.com/@SakshiTVLIVE/live)
         EOL
 
     - name: Upload artifact
