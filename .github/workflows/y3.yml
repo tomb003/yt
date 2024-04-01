@@ -29,7 +29,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/CNBC/live)
+        $(yt-dlp -g https://www.youtube.com/@CNBC/live)
         EOL
 
     - name: Get us_CNBCArabia.m3u8
@@ -39,7 +39,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/cnbcarabiaTV/live)
+        $(yt-dlp -g https://www.youtube.com/@cnbcarabiaTV/live)
         EOL
 
     - name: Get us_NBCNews.m3u8
@@ -49,7 +49,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/NBCNews/live)
+        $(yt-dlp -g https://www.youtube.com/@NBCNews/live)
         EOL
 
     - name: Get us_NBC2News.m3u8
@@ -59,7 +59,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/user/NBC2swfl/live)
+        $(yt-dlp -g https://www.youtube.com/@NBC2swfl/live)
         EOL
 
     - name: Get us_FoxNewsNow.m3u8
@@ -69,7 +69,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/livenowfox/live)
+        $(yt-dlp -g https://www.youtube.com/@livenowfox/live)
         EOL
 
     - name: Get us_FOXWeather.m3u8
@@ -79,7 +79,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/Foxweather/live)
+        $(yt-dlp -g https://www.youtube.com/@Foxweather/live)
         EOL
 
     - name: Get us_ABCNews.m3u8
@@ -89,7 +89,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/ABCNews/live)
+        $(yt-dlp -g https://www.youtube.com/@ABCNews/live)
         EOL
 
     - name: Get us_ABC7NewsSWFL.m3u8
@@ -109,7 +109,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/ABC7/live)
+        $(yt-dlp -g https://www.youtube.com/@ABC7/live)
         EOL
 
     - name: Get us_WPBF25News.m3u8
@@ -119,7 +119,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/WPBF/live)
+        $(yt-dlp -g https://www.youtube.com/@WPBF/live)
         EOL
 
     - name: Get us_WPLGLocal10.m3u8
@@ -129,7 +129,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/WPLGLocal10/live)
+        $(yt-dlp -g https://www.youtube.com/wplglocal10/live)
         EOL
 
     - name: Get us_BloombergBusinessNews.m3u8
@@ -169,7 +169,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/SonlifeTV/live)
+        $(yt-dlp -g https://www.youtube.com/sonlifetv/live)
         EOL
 
     - name: Get us_YahooFinance.m3u8
@@ -179,7 +179,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/YahooFinance/live)
+        $(yt-dlp -g https://www.youtube.com/@YahooFinance/live)
         EOL
 
     - name: Get us_SchwabNetwork.m3u8
@@ -199,7 +199,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/WCVB/live)
+        $(yt-dlp -g https://www.youtube.com/@WCVB/live)
         EOL
 
     - name: Get us_4029News.m3u8
@@ -209,17 +209,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/4029news/live)
-        EOL
-
-    - name: Get us_News12NewYork.m3u8
-      run: |
-        touch ./us_News12NewYork.m3u8
-        sudo cat >./us_News12NewYork.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/news12/live)
+        $(yt-dlp -g https://www.youtube.com/@4029news/live)
         EOL
 
     - name: Get us_WRAL.m3u8
@@ -229,7 +219,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/WRAL5/live)
+        $(yt-dlp -g https://www.youtube.com/@WRAL5/live)
         EOL
 
     - name: Get us_KCRA3.m3u8
@@ -239,7 +229,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/KCRA/live)
+        $(yt-dlp -g https://www.youtube.com/@KCRA/live)
         EOL
 
     - name: Get us_WESH2News.m3u8
@@ -249,7 +239,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/WESH/live)
+        $(yt-dlp -g https://www.youtube.com/@WESH/live)
         EOL
 
     - name: Get us_WMURTV.m3u8
@@ -259,7 +249,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/WMUR/live)
+        $(yt-dlp -g https://www.youtube.com/@WMUR/live)
         EOL
 
     - name: Get us_WMTWTV.m3u8
@@ -269,7 +259,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/user/WMTWTV/live)
+        $(yt-dlp -g https://www.youtube.com/@WMTW/live)
         EOL
 
     - name: Get us_KOCO5News.m3u8
@@ -279,7 +269,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/KOCO/live)
+        $(yt-dlp -g https://www.youtube.com/@KOCO/live)
         EOL
 
     - name: Get us_USATODAY.m3u8
@@ -289,7 +279,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/USATODAY/live)
+        $(yt-dlp -g https://www.youtube.com/@USATODAY/live)
         EOL
 
     - name: Get us_CBNNews.m3u8
@@ -299,7 +289,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/user/CBNnewsonline/live)
+        $(yt-dlp -g https://www.youtube.com/@CBNnewsonline/live)
         EOL
 
     - name: Get us_WVTM13News.m3u8
@@ -319,7 +309,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/KSBW/live)
+        $(yt-dlp -g https://www.youtube.com/@KSBW/live)
         EOL
 
     - name: Get us_CurrentTimeTV.m3u8
@@ -329,7 +319,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/user/CurrentTimeTV/live)
+        $(yt-dlp -g https://www.youtube.com/@CurrentTimeTV/live)
         EOL
 
     - name: Get us_16WAPTNews.m3u8
@@ -339,7 +329,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/16WAPTNews/live)
+        $(yt-dlp -g https://www.youtube.com/@16WAPTNews/live)
         EOL
 
     - name: Get us_AlHurra.m3u8
@@ -349,7 +339,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/alhurra/live)
+        $(yt-dlp -g https://www.youtube.com/@alhurra/live)
         EOL
 
     - name: Get uk_GBNews.m3u8
@@ -359,7 +349,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/GBNewsOnline/live)
+        $(yt-dlp -g https://www.youtube.com/@GBNewsOnline/live)
         EOL
 
     - name: Get uk_BBCNewsArabic.m3u8
@@ -369,7 +359,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/bbcarabic/live)
+        $(yt-dlp -g https://www.youtube.com/bbcarabic/live)
         EOL
 
     - name: Get uk_BBCNewsPersian.m3u8
@@ -379,7 +369,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/user/BBCPersian/live)
+        $(yt-dlp -g https://www.youtube.com/@BBCNewsPersian/live)
         EOL
 
     - name: Get uk_TalkTV.m3u8
