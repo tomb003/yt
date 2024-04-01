@@ -22,24 +22,14 @@ jobs:
         $(yt-dlp -g https://www.youtube.com/watch?v=2mCSYvcfhtc)
         EOL
 
-    - name: Get ww_TVBSXuanXinWen.m3u8
+    - name: Get ww_TVBSHD.m3u8
       run: |
-        touch ./ww_TVBSXuanXinWen.m3u8
-        sudo cat >./ww_TVBSXuanXinWen.m3u8 <<EOL
+        touch ./ww_TVBSHD.m3u8
+        sudo cat >./ww_TVBSHD.m3u8 <<EOL
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
         $(yt-dlp -g https://www.youtube.com/watch?v=YvdcZ_jpLXE)
-        EOL
-
-    - name: Get ww_TVBSXuanXinWen2.m3u8
-      run: |
-        touch ./ww_TVBSXuanXinWen2.m3u8
-        sudo cat >./ww_TVBSXuanXinWen2.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/@TVBSNEWS02/live)
         EOL
 
     - name: Get ww_HuaShiXinWenZiXun.m3u8
@@ -49,7 +39,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/@CtsTw/live)
+        $(yt-dlp -g https://www.youtube.com/watch?v=wM0g8EoUZ_E)
         EOL
 
     - name: Get ww_DongSenLive.m3u8
@@ -79,7 +69,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/@ytnnews24/live)
+        $(yt-dlp -g https://www.youtube.com/watch?v=FJfwehhzIhw)
         EOL
 
     - name: Get kr_YTNdmb.m3u8
@@ -89,7 +79,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/ytndmb/live)
+        $(yt-dlp -g https://www.youtube.com/@ytndmb/live)
         EOL
 
     - name: Get kr_KBS_KOREA.m3u8
@@ -102,16 +92,6 @@ jobs:
         $(yt-dlp -g https://www.youtube.com/watch?v=OxQQsIvJTTU)
         EOL
 
-    - name: Get us_NationalGeographic.m3u8
-      run: |
-        touch ./us_NationalGeographic.m3u8
-        sudo cat >./us_NationalGeographic.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/NatGeo/live)
-        EOL
-
     - name: Get fr_EuronewsEnglish.m3u8
       run: |
         touch ./fr_EuronewsEnglish.m3u8
@@ -119,7 +99,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/euronews/live)
+        $(yt-dlp -g https://www.youtube.com/@euronews/live)
         EOL
 
     - name: Get fr_franceinfo.m3u8
@@ -129,7 +109,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/franceinfo/live)
+        $(yt-dlp -g https://www.youtube.com/@franceinfo/live)
         EOL
 
     - name: Get au_ABCIview.m3u8
@@ -139,7 +119,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/NewsOnABC/live)
+        $(yt-dlp -g https://www.youtube.com/@abcnewsaustralia/live)
         EOL
 
     - name: Get pk_ARYNews.m3u8
@@ -149,7 +129,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/ArynewsTvofficial/live)
+        $(yt-dlp -g https://www.youtube.com/ArynewsTvofficial/live)
         EOL
 
     - name: Get mx_MILENIO.m3u8
@@ -159,7 +139,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/milenio/live)
+        $(yt-dlp -g https://www.youtube.com/@milenio/live)
         EOL
 
     - name: Get mx_TelediarioMx.m3u8
@@ -169,7 +149,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/TelediarioMx/live)
+        $(yt-dlp -g https://www.youtube.com/@TelediarioMx/live)
         EOL
 
     - name: Get mx_NMas.m3u8
@@ -179,7 +159,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/nmas/live)
+        $(yt-dlp -g https://www.youtube.com/@nmas/live)
         EOL
 
     - name: Get co_NoticiasCaracol.m3u8
@@ -189,7 +169,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/c/noticiascaracol/live)
+        $(yt-dlp -g https://www.youtube.com/@noticiascaracol/live)
         EOL
 
     - name: Get co_CityTV.m3u8
