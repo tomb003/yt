@@ -162,16 +162,6 @@ jobs:
         $(yt-dlp -g https://www.youtube.com/astroawani/live)
         EOL
 
-    - name: Get my_Bernama.m3u8
-      run: |
-        touch ./my_Bernama.m3u8
-        sudo cat >./my_Bernama.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=iCoIAUSpKdo)
-        EOL
-
     - name: Get my_BeritaRTM.m3u8
       run: |
         touch ./my_BeritaRTM.m3u8
