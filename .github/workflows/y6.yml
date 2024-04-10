@@ -109,17 +109,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=YVTk2c-e-J4)
-        EOL
-
-    - name: Get in_News18JKLH.m3u8
-      run: |
-        touch ./in_News18JKLH.m3u8
-        sudo cat >./in_News18JKLH.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=c3tyL0RVKUY)
+        $(yt-dlp -g https://www.youtube.com/@News18Gujarati/live)
         EOL
 
     - name: Get in_News18Odia.m3u8
