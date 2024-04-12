@@ -59,7 +59,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/@CtiTv/live)
+        $(yt-dlp -g https://www.youtube.com/watch?v=oIgbl7t0S_w)
         EOL
 
     - name: Get ww_ZhongTianXinWen2.m3u8
@@ -69,7 +69,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/@CtiDeepThroat/live)
+        $(yt-dlp -g https://www.youtube.com/watch?v=WPfPjbOLNfE)
         EOL
 
     - name: Get ww_TVBSNews.m3u8
