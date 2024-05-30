@@ -302,16 +302,6 @@ jobs:
         $(yt-dlp -g https://www.youtube.com/@KarbalatvGroup/live)
         EOL
 
-    - name: Get iq_JinTVZindi.m3u8
-      run: |
-        touch ./iq_JinTVZindi.m3u8
-        sudo cat >./iq_JinTVZindi.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/@jintvzindi/live)
-        EOL
-
     - name: Get ke_CitizenTV.m3u8
       run: |
         touch ./ke_CitizenTV.m3u8
