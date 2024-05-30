@@ -142,16 +142,6 @@ jobs:
         $(yt-dlp -g https://www.youtube.com/@NEWS9LIVE/live)
         EOL
 
-    - name: Get in_HarvestTV.m3u8
-      run: |
-        touch ./in_HarvestTV.m3u8
-        sudo cat >./in_HarvestTV.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/@harvesttv7644/live)
-        EOL
-
     - name: Get in_NandighoshaTV.m3u8
       run: |
         touch ./in_NandighoshaTV.m3u8
