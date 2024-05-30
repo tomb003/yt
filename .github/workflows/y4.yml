@@ -179,7 +179,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/@LeMediaOfficiel/live)
+        $(yt-dlp -g https://www.youtube.com/c/LeM%C3%A9diaOfficiel/live)
         EOL
 
     - name: Get de_DWNews.m3u8
