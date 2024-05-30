@@ -29,7 +29,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/@CtsTw/live)
+        $(yt-dlp -g https://www.youtube.com/watch?v=wM0g8EoUZ_E)
         EOL
 
     - name: Get ww_DongSenLive.m3u8
