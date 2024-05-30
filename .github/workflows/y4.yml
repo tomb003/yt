@@ -269,7 +269,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=35oTS5zl2rM)
+        $(yt-dlp -g https://www.youtube.com/@TVG/live)
         EOL
 
     - name: Get it_Skytg24.m3u8
