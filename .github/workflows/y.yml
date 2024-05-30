@@ -29,7 +29,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=Zv60F39Is_c)
+        $(yt-dlp -g https://www.youtube.com/watch?v=HDQEhzQP-c0)
         EOL
 
     - name: Get cn_CGTNFrancais.m3u8
