@@ -1,7 +1,7 @@
 name: y m3u8
 on:
   schedule:
-    - cron: "0 */1 * * *"
+    - cron: "*/5 * * * *"
   workflow_dispatch:
 jobs:
   build:
@@ -70,6 +70,16 @@ jobs:
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
         $(yt-dlp -g https://www.youtube.com/watch?v=WPfPjbOLNfE)
+        EOL
+
+    - name: Get ww_ZhongTianYaZhou.m3u8
+      run: |
+        touch ./ww_ZhongTianYaZhou.m3u8
+        sudo cat >ww_ZhongTianYaZhou <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
+        $(yt-dlp -g https://www.youtube.com/@CtiAsia/live)
         EOL
 
     - name: Get ww_TVBSNews.m3u8
