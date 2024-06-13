@@ -1,7 +1,7 @@
 name: y8 m3u8
 on:
   schedule:
-    - cron: "0 */1 * * *"
+    - cron: "*/5 * * * *"
   workflow_dispatch:
 jobs:
   build:
@@ -140,16 +140,6 @@ jobs:
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
         $(yt-dlp -g https://www.youtube.com/@dawnnewspakistan/live)
-        EOL
-
-    - name: Get pk_GTVNetworkHD.m3u8
-      run: |
-        touch ./pk_GTVNetworkHD.m3u8
-        sudo cat >./pk_GTVNetworkHD.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/gtvnetworkhd/live)
         EOL
 
     - name: Get pk_PTVNews.m3u8
