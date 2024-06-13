@@ -262,16 +262,6 @@ jobs:
         $(yt-dlp -g https://www.youtube.com/alkaherawalnas/live)
         EOL
 
-    - name: Get eg_AlghadExtra.m3u8
-      run: |
-        touch ./eg_AlghadExtra.m3u8
-        sudo cat >./eg_AlghadExtra.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/@AlghadExtra/live)
-        EOL
-
     - name: Get iq_KarbalaTV.m3u8
       run: |
         touch ./iq_KarbalaTV.m3u8
