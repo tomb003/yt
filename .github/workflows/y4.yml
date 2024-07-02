@@ -272,26 +272,6 @@ jobs:
         $(yt-dlp -g https://www.youtube.com/@TVG/live)
         EOL
 
-    - name: Get it_Skytg24.m3u8
-      run: |
-        touch ./it_Skytg24.m3u8
-        sudo cat >./it_Skytg24.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/@skytg24/live)
-        EOL
-
-    - name: Get be_MedyaHaberTV.m3u8
-      run: |
-        touch ./be_MedyaHaberTV.m3u8
-        sudo cat >./be_MedyaHaberTV.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/@MedyaHaberTV1/live)
-        EOL
-
     - name: Get at_OE24TV.m3u8
       run: |
         touch ./at_OE24TV.m3u8
