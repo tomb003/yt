@@ -182,16 +182,6 @@ jobs:
         $(yt-dlp -g https://www.youtube.com/@keralavisionnews24x7/live)
         EOL
 
-    - name: Get bd_Channel24.m3u8
-      run: |
-        touch ./bd_Channel24.m3u8
-        sudo cat >./bd_Channel24.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/@channel24digital/live)
-        EOL
-
     - name: Get bd_ChanneliNews.m3u8
       run: |
         touch ./bd_ChanneliNews.m3u8
@@ -300,16 +290,6 @@ jobs:
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
         $(yt-dlp -g https://www.youtube.com/@kompastvmedan/live)
-        EOL
-
-    - name: Get id_Liputan6.m3u8
-      run: |
-        touch ./id_Liputan6.m3u8
-        sudo cat >./id_Liputan6.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/@liputan6_news/live)
         EOL
 
     - name: Get id_METROTV.m3u8
