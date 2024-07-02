@@ -152,16 +152,6 @@ jobs:
         $(yt-dlp -g https://www.youtube.com/@chsentv/live)
         EOL
 
-    - name: Get my_AstroAWANI.m3u8
-      run: |
-        touch ./my_AstroAWANI.m3u8
-        sudo cat >./my_AstroAWANI.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/astroawani/live)
-        EOL
-
     - name: Get my_BeritaRTM.m3u8
       run: |
         touch ./my_BeritaRTM.m3u8
@@ -219,7 +209,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/watch?v=XiBBbMVGUkQ)
+        $(yt-dlp -g https://www.youtube.com/@ictv/live)
         EOL
 
     - name: Get ua_1plus1.m3u8
@@ -310,16 +300,6 @@ jobs:
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
         $(yt-dlp -g https://www.youtube.com/@AlmagharibiaTv/live)
-        EOL
-
-    - name: Get ug_NTVUganda.m3u8
-      run: |
-        touch ./ug_NTVUganda.m3u8
-        sudo cat >./ug_NTVUganda.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/ntvuganda/live)
         EOL
 
     - name: Get un_UnitedNations.m3u8
