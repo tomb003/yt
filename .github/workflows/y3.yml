@@ -112,16 +112,6 @@ jobs:
         $(yt-dlp -g https://www.youtube.com/@ABC7/live)
         EOL
 
-    - name: Get us_WPBF25News.m3u8
-      run: |
-        touch ./us_WPBF25News.m3u8
-        sudo cat >./us_WPBF25News.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=104857600
-        $(yt-dlp -g https://www.youtube.com/@WPBF/live)
-        EOL
-
     - name: Get us_WPLGLocal10.m3u8
       run: |
         touch ./us_WPLGLocal10.m3u8
